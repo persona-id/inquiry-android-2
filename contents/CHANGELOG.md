@@ -5,6 +5,21 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/), and this project
 adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [v2.2.20] - 2022-05-06
+
+### Changed
+
+- Allow users to retry navigating between certain steps on recoverable network errors
+- Allow users to retry uploading government id/document files
+- Improve network calls so they are more resilient
+- Selfie biometric consent has moved to appear above the agreement button to ensure users have read the full consent text before continuing.
+- Update dependency of Coil from 0.12.0 to 2.0.0-rc03
+
+### Fixed
+
+- Display errors on input fields when there is a user input error
+- Fix flickering of image/document previews in rare cases.
+
 ## [v2.2.19] - 2022-04-29
 
 ### Fixed
