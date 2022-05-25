@@ -5,6 +5,18 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/), and this project
 adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [v2.2.23] - 2022-05-24
+
+### Added
+
+- Added support for the following `InquiryField` types: `date`, `datetime`, `float`
+
+### Changed
+
+- Change the government ID select screen to be configurable by the server
+- Update dependencies
+- Depend on Kotlin 1.6.10
+
 ## [v2.2.22] - 2022-05-20
 
 ### Fixed
