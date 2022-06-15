@@ -5,6 +5,26 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/), and this project
 adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [v2.2.24] - 2022-06-15
+
+### Fixed
+
+- Confirm back press when users press the back button on transition/load screens.
+- Disable submit button on document select screen if no documents are selected.
+- Show an icon for PDF documents selected for the document verification step.
+
+### Added
+
+- Added a hint shadow that indicates when there is more content to be scrolled.
+- Added the app set ID to request headers (https://developer.android.com/training/articles/app-set-id)
+
+### Changed
+- Match camera feed edge radius and hint box radius to the radius of the capture feed border.
+- Updated the implementation of government id auto capture to allow server configurability.
+- Update dependencies
+- Limit polling for inquiry status update to 90 seconds. Previously there was no time limit.
+- Update the network write timeout to 1 minute. Previously this was 10 seconds.
+
 ## [v2.2.23] - 2022-05-24
 
 ### Added
