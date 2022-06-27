@@ -5,6 +5,16 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/), and this project
 adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [v2.2.25] - 2022-06-27
+
+### Changed
+- When transitioning to the next step, show a progress bar embedded into the action button as opposed to showing a full screen progress bar.
+
+### Fixed
+- Fix a crash for the document select step when a selected document cannot be opened.
+- Fix a bug that caused the government ID step to upload one more photo than necessary.
+- Made lottie animation loading more resilient.
+
 ## [v2.2.24] - 2022-06-15
 
 ### Fixed
