@@ -5,12 +5,28 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/), and this project
 adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [v2.2.26] - 2022-07-08
+
+### Added
+
+- Added the following theme property:
+  - `personaInitialLoadingBackgroundDrawable`
+- Added animations when transitioning between screens
+
+### Changed
+
+- Improve barcode scanning to detect barcodes faster
+- Removed loading screens when navigating back
+- Update dependencies
+
 ## [v2.2.25] - 2022-06-27
 
 ### Changed
+
 - When transitioning to the next step, show a progress bar embedded into the action button as opposed to showing a full screen progress bar.
 
 ### Fixed
+
 - Fix a crash for the document select step when a selected document cannot be opened.
 - Fix a bug that caused the government ID step to upload one more photo than necessary.
 - Made lottie animation loading more resilient.
@@ -29,6 +45,7 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 - Added the app set ID to request headers (https://developer.android.com/training/articles/app-set-id)
 
 ### Changed
+
 - Match camera feed edge radius and hint box radius to the radius of the capture feed border.
 - Updated the implementation of government id auto capture to allow server configurability.
 - Update dependencies
