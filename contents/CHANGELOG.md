@@ -5,6 +5,19 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/), and this project
 adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [v2.2.29] - 2022-07-29
+
+### Added
+
+- Added the ability to control page level vertical alignment via the server
+- Added the ability to style buttons on the government id capture page via the server
+
+### Fixed
+
+- Fixed an animation bug on small screens on the review captured image screen.
+- Swapped the order of the buttons on the permission request bottom sheet to be consistent with Android standards.
+- Fixed an issue where you couldn't resume inquiries created in sandbox mode and have the pass/fail toggle show up.
+
 ## [v2.2.28] - 2022-07-19
 
 ### Fixed
