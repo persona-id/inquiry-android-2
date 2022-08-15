@@ -5,12 +5,24 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/), and this project
 adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [v2.2.30] - 2022-08-15
+
+### Fixed
+
+- Workaround an Android 12 bugs where requesting permissions can cause a memory leak.
+- Fix a crash that would occur when a selfie/government id flow is launched on a device has no cameras.
+
+### Changed
+
+- Keep screen on on camera capture screens.
+- Default assets for government id, selfie, and document processing animations have been updated.
+
 ## [v2.2.29] - 2022-07-29
 
 ### Added
 
-- Added the ability to control page level vertical alignment via the server
-- Added the ability to style buttons on the government id capture page via the server
+- Added the ability to control page level vertical alignment via the server.
+- Added the ability to style buttons on the government id capture page via the server.
 
 ### Fixed
 
