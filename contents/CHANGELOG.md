@@ -5,6 +5,21 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/), and this project
 adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [v2.2.31] - 2022-08-22
+
+### Added
+
+- Added the ability to render the government id select screen as a more granularly configurable page type
+- Added the ability to style processing screen text elements via the server
+
+### Fixed
+
+- Fix a bug where text fields will not retain their state on activity recreate.
+- Fix a bug where cursor will jump to the front in text fields on text input.
+
+### Changed
+- Downgrade dependency on bouncy castle from jdk18on to jdk15to18.
+
 ## [v2.2.30] - 2022-08-15
 
 ### Fixed
@@ -16,6 +31,7 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 - Keep screen on on camera capture screens.
 - Default assets for government id, selfie, and document processing animations have been updated.
+- Permission request popup has been moved for the government ID step. It was moved from the ID select screen to the camera capture screen.
 
 ## [v2.2.29] - 2022-07-29
 
