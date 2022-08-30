@@ -5,6 +5,20 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/), and this project
 adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [v2.2.32] - 2022-08-29
+
+### Changed
+
+- Autosubmit confirmation code after it has been typed in.
+- Confirmation code fields now paste properly and align with expected behavior when deleting and changing numbers.
+- Give a default margin of 24dp to footers
+
+### Fixed
+
+- Fixed a crash related to lottie.
+- Fixed text layouts when the device is set to render large font sizes for accessibility.
+- Fixed a bug that caused inquiries which contained back-to-back combined steps of the same type to hang.
+
 ## [v2.2.31] - 2022-08-22
 
 ### Added
