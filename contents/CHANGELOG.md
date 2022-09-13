@@ -5,11 +5,23 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/), and this project
 adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [v2.2.37] - 2022-09-13
+
+### Added
+- Added the ability to style footer components as a bottom presented sheet.
+- Added support for the 'hidden' field which some components use.
+
+### Fixed
+- Fixed an issue where buttons were not getting paddings from the server properly applied.
+- Fixed an issue where buttons on the final complete screen were being added to footers incorrectly.
+- Fixed an issue where date input does not display error.
+- Fixed a crash when using custom styled buttons on API 21.
+
 ## [v2.2.36] - 2022-09-06
 
 ### Fixed
 
-- Added padding to branding elements to prevent run-up against the edge of the screen
+- Added padding to branding elements to prevent run-up against the edge of the screen.
 - Fixed validation on address input.
 - Fixed location of disclaimer on government id camera screens.
 
