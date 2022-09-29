@@ -5,6 +5,26 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/), and this project
 adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+# [v2.2.38] - 2022-09-29
+
+### Added
+- Added support for checkbox components in UI steps.
+- Added support for number only input components in UI steps.
+- Added support for theming the government id upload flow via the server.
+
+### Changed
+- Now surfacing clearer error message when invalid `fields` are included on the InquiryBuilder.
+- Update dependencies.
+
+### Fixed
+- Fixed issues where IO streams were not closed after use.
+- Added support for the 'disabled' field which some components use.
+- Fixed a bug where date inputs were not disabled while submitting information.
+- Fixed some minor layout issues on UI steps.
+- Fixed a line wrapping issue for the month field on date inputs.
+- Fixed placeholders for address components when country code is not `US`.
+- Fixed some layout issues when errors were shown on input fields.
+
 ## [v2.2.37] - 2022-09-13
 
 ### Added
