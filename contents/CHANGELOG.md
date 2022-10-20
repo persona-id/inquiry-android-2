@@ -5,6 +5,19 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/), and this project
 adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [v2.2.41] - 2022-10-19
+
+### Added
+- Added support for styling image preview borders in document flows.
+- Added support for customizing cancel modal texts via the server.
+
+### Changed
+- Update dependencies.
+- Input Select component now has sticky header and blocks clicks on background components.
+
+### Fixed
+- Don't allow buttons to run up against the edge of the screen when using margins from the server.
+
 ## [v2.2.40] - 2022-10-04
 
 ### Changed
