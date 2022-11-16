@@ -5,6 +5,24 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/), and this project
 adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [v2.2.43] - 2022-11-16
+
+### Added
+- Added the ability to use custom copy for permissions modals via the server.
+- Added support for rendering QR code components.
+
+### Changed
+- Document verification flow now uploads files prior to submit.
+- Improve error logging for certain types of errors.
+
+### Fixed
+- Fixed lateinit crash on camera screens.
+- Fixed a rare network error crash.
+- Fixed a crash if activity is killed and resumed while permission modal is shown.
+- Fixed an ANR that can occur if permissions are accepted after the activity has been killed and recreated.
+- Fixed a bug where input select components would not render correctly if multiple input select
+  components existed on a single screen.
+
 ## [v2.2.42] - 2022-11-08
 
 ### Added
