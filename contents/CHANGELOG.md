@@ -5,6 +5,15 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/), and this project
 adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [v2.2.45] - 2022-11-30
+
+### Added
+- Added some validations for SDK arguments.
+
+### Fixed
+- Fixed a crash when using split screen mode during the government id flow and the screen is resized.
+- Fixed a crash when split screen is enabled and the permission modal is shown.
+
 ## [v2.2.44] - 2022-11-18
 
 ### Fixed
