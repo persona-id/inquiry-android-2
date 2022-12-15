@@ -7,6 +7,12 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## Unreleased
 
+## [v2.3.0] - 2022-12-15
+
+### Changed
+- Make nfc-impl module an extension module that is not include dy default.
+- Upgraded minimum SDK to 33.
+
 ## [v2.2.46] - 2022-12-01
 
 ### Changed
