@@ -7,6 +7,15 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## Unreleased
 
+## [v2.3.1] - 2023-01-10
+
+### Added
+- Support for various customizations and polish items on document upload steps.
+
+### Changed
+- Improve handling of certain network errors.
+- Document file uploads will now use progress bars instead of loading spinners.
+
 ## [v2.3.0] - 2022-12-15
 
 ### Changed
