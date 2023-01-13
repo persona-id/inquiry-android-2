@@ -7,6 +7,14 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## Unreleased
 
+## [v2.3.2] - 2023-01-12
+
+### Fixed
+- Fixed an issue where centering vertically on pages wasn't working.
+- Camera feed radii did not match border radii around the feed.
+- Apply the correct font family from the server to disclaimer texts on capture steps.
+- Fixed broken text alignment when supportsRtl is not set to true in the hosting app manifest.
+
 ## [v2.3.1] - 2023-01-10
 
 ### Added
