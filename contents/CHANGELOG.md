@@ -7,6 +7,11 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## Unreleased
 
+## [v2.3.3] - 2023-01-17
+
+### Fixed
+- Fixed problems with government id hint capture text alignment and border radii
+
 ## [v2.3.2] - 2023-01-12
 
 ### Fixed
