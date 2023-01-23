@@ -7,6 +7,18 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## Unreleased
 
+## [v2.3.4] - 2023-01-23
+
+### Added
+- Added the ability to use custom processing animations on the document processing screen.
+- Added status bar coloring behavior to match the background color of each page automatically
+  when using styles from the server.
+- Added collection mode. When enabled, the SDK will return all locally collected data from the inquiry on inquiry completion.
+- Added support for radio button components
+
+### Changed
+- Removed drop shadows from document card previews.
+
 ## [v2.3.3] - 2023-01-17
 
 ### Fixed
