@@ -7,7 +7,16 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## Unreleased
 
+## [v2.3.5] - 2023-01-25
+
+### Fixed
+- Fixed a performance issue with input select bottom sheets that contained a large number of options.
+- Expose classes of objects returned by collection mode in the SDK.
+
 ## [v2.3.4] - 2023-01-23
+
+### Fixed
+- Fixed input radio button component titles and prefill behavior.
 
 ### Added
 - Added the ability to use custom processing animations on the document processing screen.
