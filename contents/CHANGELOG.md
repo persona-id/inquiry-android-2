@@ -7,6 +7,18 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## Unreleased
 
+## [v2.3.6] - 2023-02-13
+
+### Added
+- Added welsh translations.
+- Added titles to camera permission modals.
+
+### Changed
+- Update dependencies.
+
+### Fixed
+- Fixed an issue where images could sometimes be cut-off if the value sent from the server was too large.
+
 ## [v2.3.5] - 2023-01-25
 
 ### Fixed
