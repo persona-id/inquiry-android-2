@@ -7,6 +7,14 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## Unreleased
 
+## [v2.4.0] - 2023-02-22
+
+### Changed
+- Deprecated the `theme(@StyleRes theme: Int)` function. `theme(themeSource: ThemeSource)` should
+  be used instead. Pass in `ServerThemeSource(@StyleRes theme: Int)` to use theming set in the Persona Dashboard. Pass
+  in `ClientThemeSource(theme: Int)` with your current client theme id to keep the current behavior
+  that only uses client side theming. Note that `ClientThemeSource` is also marked as deprecated.
+
 ## [v2.3.6] - 2023-02-13
 
 ### Added
