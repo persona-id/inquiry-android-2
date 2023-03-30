@@ -7,6 +7,12 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## Unreleased
 
+## [v2.4.1] - 2023-03-29
+  
+### Fixed
+- Return InquiryResponse.Cancel instead of InquiryResponse.Error if the SDK was killed due to an
+  activity starting in a new task. Eg. an activity started with the `singleTask` flag.
+
 ## [v2.4.0] - 2023-02-22
 
 ### Changed
