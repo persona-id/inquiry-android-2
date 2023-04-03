@@ -7,8 +7,23 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## Unreleased
 
+## [v2.5.0] - 2023-04-03
+
+### Added
+- Added the ability to load static templates from bundled json files. This can be accessed with the
+  fromStaticTemplate(staticInquiryTemplate: StaticInquiryTemplate) function. Note that this is currently
+  an experimental feature.
+- Added support for inquiries that require video capture.
+- Added functionality to extract text from government documents on the client.
+
+### Changed
+- Upgrade Lottie to 6.0.0.
+
+### Fixed
+- Fixed a crash that could occur when we failed to open a network connection for remote animation assets.
+
 ## [v2.4.1] - 2023-03-29
-  
+
 ### Fixed
 - Return InquiryResponse.Cancel instead of InquiryResponse.Error if the SDK was killed due to an
   activity starting in a new task. Eg. an activity started with the `singleTask` flag.
@@ -367,7 +382,6 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 - Allow users to retry navigating between certain steps on recoverable network errors
 - Allow users to retry uploading government id/document files
 - Improve network calls so they are more resilient
-- Selfie biometric consent has moved to appear above the agreement button to ensure users have read the full consent text before continuing.
 - Update dependency of Coil from 0.12.0 to 2.0.0-rc03
 
 ### Fixed
