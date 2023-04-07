@@ -7,6 +7,15 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## Unreleased
 
+## [v2.5.1] - 2023-04-06
+
+### Changed
+- Update dependencies.
+
+### Fixed
+- Fixed a bug that would cause government id steps to trigger auto capture immediately if auto 
+  capture is disabled.
+
 ## [v2.5.0] - 2023-04-03
 
 ### Added
