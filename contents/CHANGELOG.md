@@ -7,6 +7,25 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## Unreleased
 
+## [v2.6.0]
+
+### Changed
+**UI UPDATES: GOVERNMENT ID CAMERA CAPTURE SCREEN**
+We’ve changed the animation that plays on the screen where the user is asked to take a photo of
+their government ID. The previous animation featured a line sweeping back and forth, horizontally.
+This animation has been replaced with a more subtle sweeping animation around the border of the
+camera preview frame. The new animation is designed to be performant and distraction-free. It is
+rendered with custom code for better performance.
+
+We've also added a button to the government id capture screen that displays capture tips when 
+tapped. This change was made to improve the quality of photos captured by the user.
+
+If you have any questions about these changes, please reach out to your CSM.
+
+### Fixed
+- Fixed a rare native library crash where the native library could not be found due to an 
+  incompatible architecture.
+
 ## [v2.5.1] - 2023-04-06
 
 ### Changed
