@@ -7,6 +7,18 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## Unreleased
 
+## [v2.6.1] - 2023-05-16
+
+### Changed
+- Now setting status bar color to match default background color for initial loading screen.
+- Try multiple configurations for video capture if the first configuration doesn't work.
+- Dismiss capture tips screen on back press instead of navigating back.
+
+### Fixed
+- Fix a possible crash that can occur if using Android Gradle Plugin 8.0.0 on Android 13.
+- Fix a rare crash with video capture.
+- Fix a layout bug with margins on input date select components.
+
 ## [v2.6.0]
 
 ### Changed
