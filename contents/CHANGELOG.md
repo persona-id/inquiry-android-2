@@ -7,6 +7,11 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## Unreleased
 
+## [v2.6.2] - 2023-05-23
+
+### Added
+- Added an experimental feature to allow setting the themeSetId when starting an inquiry. This determines what theme set to read from on the server.
+
 ## [v2.6.1] - 2023-05-16
 
 ### Changed
