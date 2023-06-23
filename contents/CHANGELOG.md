@@ -7,6 +7,14 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## Unreleased
 
+## [v2.7.0] - 2023-06-22
+
+### Added
+- Added `.routingCountry` to `InquiryTemplateBuilder` and `InquiryBuilder` to choose which server region the inquiry is routed to directly.
+
+### Fixed
+- Fixed a bug when passing empty string as `sessionToken` to `InquiryBuilder`.
+
 ## [v2.6.2] - 2023-05-23
 
 ### Added
