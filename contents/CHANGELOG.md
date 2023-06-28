@@ -7,6 +7,11 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## Unreleased
 
+## [v2.7.1] - 2023-06-27
+
+### Fixed
+- Fixed a crash when a PDF417 barcode is scanned but the barcode does not indicate an expiration date.
+
 ## [v2.7.0] - 2023-06-22
 
 ### Added
