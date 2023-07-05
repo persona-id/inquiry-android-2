@@ -7,6 +7,12 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## Unreleased
 
+## [v2.7.2] - 2023-07-05
+
+### Fixed
+
+- Fixed `InquiryActivity` retention leak introduced in `v2.6.0`
+
 ## [v2.7.1] - 2023-06-27
 
 ### Fixed
