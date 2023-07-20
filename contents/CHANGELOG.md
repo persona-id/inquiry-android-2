@@ -7,10 +7,24 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## Unreleased
 
+## [v2.8.0] - 2023-07-20
+
+### Added
+
+- Added `.environmentId` on `InquiryTemplateBuilder` to create inquiries with a specific environment token.
+
+### Changed
+- **Breaking change** Changed `.routingCountry` on `InquiryTemplateBuilder` and `InquiryBuilder` to accept String instead of enum.
+  - Before: `.routingCountry(RoutingCountry.DE)` after: `.routingCountry(RoutingCountry.DE.name)`
+- **Breaking change** Changed SST colors to parse as format `#RRGGBBAA` instead of `#AARRGGBB`
+  - From our audit, this change should not affect any customers. If you are affected by this change, please reach out to your account team.
+
+### Fixed
+- Fixed a bug where the values of hidden fields were being submitted to the inquiry.
+
 ## [v2.7.2] - 2023-07-05
 
 ### Fixed
-
 - Fixed `InquiryActivity` retention leak introduced in `v2.6.0`
 
 ## [v2.7.1] - 2023-06-27
