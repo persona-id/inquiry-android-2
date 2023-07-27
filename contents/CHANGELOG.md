@@ -7,10 +7,17 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## Unreleased
 
+## [v2.9.0] - 2023-07-27
+
+### Added
+- Added the ability to hide local image components based on json logic from the server.
+
+### Changed
+- Update AGP to 8.0.2 
+
 ## [v2.8.0] - 2023-07-20
 
 ### Added
-
 - Added `.environmentId` on `InquiryTemplateBuilder` to create inquiries with a specific environment token.
 
 ### Changed
