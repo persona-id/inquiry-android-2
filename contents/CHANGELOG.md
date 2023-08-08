@@ -7,6 +7,20 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## Unreleased
 
+## [v2.9.1] - 2023-08-08
+
+### Added
+- Added the ability to color custom SVGs via the server. Note that if loading the local custom asset, 
+  the SVG must be placed in the raw resources directory in order for the color replacement to occur
+  since this process does not work on vector drawables. 
+
+### Changed
+- Update AGP and Gradle to 8.1.0
+- Update dependencies.
+
+### Fixed
+- Fixed a crash that occurs when an app is built with R8 full mode.
+
 ## [v2.9.0] - 2023-07-27
 
 ### Added
