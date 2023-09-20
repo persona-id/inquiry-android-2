@@ -7,12 +7,28 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## Unreleased
 
+## [v2.10.0] - 2023-09-19
+
+### Changed
+- Changed the address input to appear as a single text field initially that can be expanded by the user.
+- Improved support for Government Id NFC.
+
+## [v2.9.2] - 2023-08-31
+
+### Added
+- Added an error code to error results.
+
+### Changed
+- Updated ESignature component styling.
+- Support the no overlay option for Government ID scan step.
+
 ## [v2.9.1] - 2023-08-08
 
 ### Added
 - Added the ability to color custom SVGs via the server. Note that if loading the local custom asset, 
   the SVG must be placed in the raw resources directory in order for the color replacement to occur
   since this process does not work on vector drawables. 
+- Added the ability to add description texts under radio groups and checkbox input components.
 
 ### Changed
 - Update AGP and Gradle to 8.1.0
