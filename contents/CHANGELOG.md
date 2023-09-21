@@ -7,6 +7,12 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## Unreleased
 
+## [v2.10.1] - 2023-09-21
+
+### Fixed
+- Fixed a bug where the error message for required input was not cleared after the input was entered.
+- Fixed a crash that can occurs if the user presses backspace on the address auto-complete field.
+
 ## [v2.10.0] - 2023-09-19
 
 ### Changed
