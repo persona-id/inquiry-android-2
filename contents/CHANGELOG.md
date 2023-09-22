@@ -7,6 +7,11 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## Unreleased
 
+## [v2.10.2] - 2023-09-22
+
+### Added
+- Added ability to override device locale via `.locale(String)` method on `InquiryTemplateBuilder` or `InquiryBuilder`.
+
 ## [v2.10.1] - 2023-09-21
 
 ### Fixed
