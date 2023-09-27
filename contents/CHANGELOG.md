@@ -7,6 +7,15 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## Unreleased
 
+## [v2.10.3] - 2023-09-27
+
+### Added
+- Added the `dynamic-feature` module. This module makes it easier to use persona with Android's dynamic feature plugin.
+
+### Changed
+- Changed video capture to work on devices with no physical microphone.
+- Downgrade Lottie to 4.2.2 due to some customers having compatibility issues with the latest version of Lottie.
+
 ## [v2.10.2] - 2023-09-22
 
 ### Added
