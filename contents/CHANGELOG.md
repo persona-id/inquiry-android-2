@@ -7,6 +7,11 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## Unreleased
 
+## [v2.10.5] - 2023-10-05
+
+### Fixed
+- Workaround an issue with MLKit when used as a dynamic feature module.
+
 ## [v2.10.4] - 2023-10-05
 
 ### Added
