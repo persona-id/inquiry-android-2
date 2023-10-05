@@ -7,6 +7,11 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## Unreleased
 
+## [v2.8.2] - 2023-10-04
+
+### Added
+- Added the ability to style buttons in the cancel modal separately from the general step button styles via the server.
+
 ## [v2.8.1] - 2023-09-27
 
 ### Changed
