@@ -7,6 +7,14 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## Unreleased
 
+## [v2.10.7] - 2023-10-27
+
+### Fixed
+- Fixed an issue where video capture would not be able to find a suitable camera even if one is available.
+- Fixed an issue where the cancel bottom sheet would not be anchored to the bottom.
+- Fixed an issue where the address component would not expand.
+- Fixed an edge case where the manual capture button will not show up when it should.
+
 ## [v2.10.6] - 2023-10-23
 
 ### Added
