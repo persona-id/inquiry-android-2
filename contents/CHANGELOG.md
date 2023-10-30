@@ -7,99 +7,30 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## Unreleased
 
-## [v2.10.7] - 2023-10-27
-
-### Fixed
-- Fixed an issue where video capture would not be able to find a suitable camera even if one is available.
-- Fixed an issue where the cancel bottom sheet would not be anchored to the bottom.
-- Fixed an issue where the address component would not expand.
-- Fixed an edge case where the manual capture button will not show up when it should.
-
-## [v2.10.6] - 2023-10-23
-
-### Added
-- Added the component text area, that will resize automatically when there is multiple lines of text
-
-### Fixed
-- Fixed an issue where users are not asked to enable the microphone permission if they permanently reject the permission. This only applies to video capture flows.
-
-### Changed
-- Display content edge-to-edge.
-
-## [v2.10.5] - 2023-10-05
-
-### Fixed
-- Workaround an issue with MLKit when used as a dynamic feature module.
-
-## [v2.10.4] - 2023-10-05
-
-### Added
-- Added the ability to style buttons in the cancel modal separately from the general step button styles via the server.
-
-### Fixed
-- Workaround a bug with Android's dynamic feature plugin. Moved all declarations of content providers to the `dynamic-feature` module.
-
-## [v2.10.3] - 2023-09-27
-
-### Added
-- Added the `dynamic-feature` module. This module makes it easier to use persona with Android's dynamic feature plugin.
-
-### Changed
-- Changed video capture to work on devices with no physical microphone.
-- Downgrade Lottie to 4.2.2 due to some customers having compatibility issues with the latest version of Lottie.
-
-## [v2.10.2] - 2023-09-22
-
-### Added
-- Added ability to override device locale via `.locale(String)` method on `InquiryTemplateBuilder` or `InquiryBuilder`.
-
-## [v2.10.1] - 2023-09-21
-
-### Fixed
-- Fixed a bug where the error message for required input was not cleared after the input was entered.
-- Fixed a crash that can occurs if the user presses backspace on the address auto-complete field.
-
-## [v2.10.0] - 2023-09-19
-
-### Changed
-- Changed the address input to appear as a single text field initially that can be expanded by the user.
-- Improved support for Government Id NFC.
-
-## [v2.9.2] - 2023-08-31
+## [v2.8.4] - 2023-10-30
 
 ### Added
 - Added an error code to error results.
 
-### Changed
-- Updated ESignature component styling.
-- Support the no overlay option for Government ID scan step.
-
-## [v2.9.1] - 2023-08-08
+## [v2.8.3] - 2023-10-13
 
 ### Added
-- Added the ability to color custom SVGs via the server. Note that if loading the local custom asset, 
-  the SVG must be placed in the raw resources directory in order for the color replacement to occur
-  since this process does not work on vector drawables. 
-- Added the ability to add description texts under radio groups and checkbox input components.
+- Added ability to override device locale via `.locale(String)` method on `InquiryTemplateBuilder` or `InquiryBuilder`.
 
-### Changed
-- Update AGP and Gradle to 8.1.0
-- Update dependencies.
-
-### Fixed
-- Fixed a crash that occurs when an app is built with R8 full mode.
-
-## [v2.9.0] - 2023-07-27
+## [v2.8.2] - 2023-10-04
 
 ### Added
-- Added the ability to hide local image components based on json logic from the server.
+- Added the ability to style buttons in the cancel modal separately from the general step button styles via the server.
+
+## [v2.8.1] - 2023-09-27
 
 ### Changed
-- Update AGP to 8.0.2 
+- Downgrade Lottie to 4.2.2 due to some customers having compatibility issues with the latest version of Lottie.
 
 ## [v2.8.0] - 2023-07-20
 
 ### Added
+
 - Added `.environmentId` on `InquiryTemplateBuilder` to create inquiries with a specific environment token.
 
 ### Changed
@@ -156,13 +87,13 @@ This animation has been replaced with a more subtle sweeping animation around th
 camera preview frame. The new animation is designed to be performant and distraction-free. It is
 rendered with custom code for better performance.
 
-We've also added a button to the government id capture screen that displays capture tips when 
+We've also added a button to the government id capture screen that displays capture tips when
 tapped. This change was made to improve the quality of photos captured by the user.
 
 If you have any questions about these changes, please reach out to your CSM.
 
 ### Fixed
-- Fixed a rare native library crash where the native library could not be found due to an 
+- Fixed a rare native library crash where the native library could not be found due to an
   incompatible architecture.
 
 ## [v2.5.1] - 2023-04-06
@@ -171,7 +102,7 @@ If you have any questions about these changes, please reach out to your CSM.
 - Update dependencies.
 
 ### Fixed
-- Fixed a bug that would cause government id steps to trigger auto capture immediately if auto 
+- Fixed a bug that would cause government id steps to trigger auto capture immediately if auto
   capture is disabled.
 
 ## [v2.5.0] - 2023-04-03
@@ -605,7 +536,7 @@ If you have any questions about these changes, please reach out to your CSM.
 ### Changed
 
 - Skip government ID select screen if only one ID class is available
-- The loading icon for initial inquiry load has been changed to a neutral grey spinner 
+- The loading icon for initial inquiry load has been changed to a neutral grey spinner
 
 ### Fixed
 
