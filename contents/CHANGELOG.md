@@ -7,6 +7,27 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## Unreleased
 
+## [v2.10.9] - 2023-11-27
+
+### Added
+- Added the ability to stream government id and selfie verifications via WebRTC.
+- Added advanced mask support for MaskedTextInput components.
+- Added search bar for countries select in GovID
+- Added support for markdown in checkboxes and radio buttons.
+
+### Fixed
+- Fixed an issue where address auto-complete would not be expanded if there are fields prefilled.
+- Fixed an issue where the address suggestion dropdown is shown even if no suggestions are available.
+- Fixed the behaviour of automatically filling in literals for mask text component, following the mask format
+- Handle out-of-space errors gracefully. An error will be returned by the SDK when the device runs out of disk space.
+- Improve performance and load times of UI steps, especially on lower end devices.
+- Prefixed some resources with "pi2" to avoid naming collisions.
+
+## [v2.10.8] - 2023-11-02
+
+### Fixed
+- Fixed a crash when using a custom government ID camera preview overlay.
+
 ## [v2.10.7] - 2023-10-27
 
 ### Fixed
