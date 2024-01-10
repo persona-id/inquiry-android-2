@@ -7,11 +7,29 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## Unreleased
 
+## [v2.10.11] - 2023-01-10
+
+### Added
+- Added highlighted background color for selected item in input select list component.
+- Added support for localization overrides on government id capture feed instructions.
+- Support server-side asset configurations for selfie, government ID and document steps.
+- Support disabled for input select and input multi select.
+- Support hidden for stack, QRCode, and spacer component. 
+- Support max rows for text area component.
+
+### Changed
+- Added additional default assets for gov id upload flows.
+
+### Fixed
+- Fixed an issue with the navigation bar color on Android API levels 27 to 29 (inclusive).
+- Fixed an issue in Government ID step where tapping back from the capture screen would cause minor UI issues.
+
 ## [v2.10.10] - 2023-12-15
 
 ### Added
 - Added checkbox group component, which has multi-select feature.
 - Added support for reusable Personas.
+- Added support for currency input components.
 
 ### Fixed
 - Fixed a rare crash when sending users to the NFC settings page. This can happen if NFC is disabled and the user is going through the passport NFC flow.
