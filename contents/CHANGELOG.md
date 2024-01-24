@@ -7,6 +7,12 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## Unreleased
 
+## [v2.10.12] - 2023-01-23
+
+### Added
+- Added support for the auto-complete flag for reusable Personas.
+- Added a new graphic for the passport NFC flow.
+
 ## [v2.10.11] - 2023-01-10
 
 ### Added
