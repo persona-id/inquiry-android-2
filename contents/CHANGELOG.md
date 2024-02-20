@@ -7,13 +7,20 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## Unreleased
 
-## [v2.10.12] - 2023-01-23
+## [v2.10.13] - 2024-02-20
+
+### Fixed
+- Fixed an issue where the capture button would overlap with other UI elements on devices with small screens.
+- Fixed an issue where the capture tips modal sometimes appears behind the navigation bar.
+- Fixed a crash that can occur in the government ID or selfie step if the cancel modal is shown and the app is backgrounded.
+
+## [v2.10.12] - 2024-01-23
 
 ### Added
 - Added support for the auto-complete flag for reusable Personas.
 - Added a new graphic for the passport NFC flow.
 
-## [v2.10.11] - 2023-01-10
+## [v2.10.11] - 2024-01-10
 
 ### Added
 - Added highlighted background color for selected item in input select list component.
