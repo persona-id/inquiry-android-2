@@ -7,6 +7,14 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## Unreleased
 
+## [v2.10.14] - 2024-02-27
+
+### Added
+- Added a toggle to have the SDK consume any unhandled exceptions via `consumeExceptions()` on `InquiryTemplateBuilder` or `InquiryBuilder`.
+
+### Fixed
+- Fixed an issue where using reusable Personas to complete parts of the inquiry does not work.
+
 ## [v2.10.13] - 2024-02-20
 
 ### Fixed
