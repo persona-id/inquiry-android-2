@@ -7,6 +7,11 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## Unreleased
 
+## [v2.10.15] - 2024-02-28
+
+### Fixed
+- Fixed an issue where the buttons in the review capture screen for government ID steps are in the wrong location.
+
 ## [v2.10.14] - 2024-02-27
 
 ### Added
