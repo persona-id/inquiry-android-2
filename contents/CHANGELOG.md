@@ -7,6 +7,11 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## Unreleased
 
+## [v2.10.16] - 2024-03-04
+
+### Added
+- Added a way to forcibly cancel all running inquiries within an application by calling `Inquiry.cancelRunningInquiries()`.
+
 ## [v2.10.15] - 2024-02-28
 
 ### Fixed
