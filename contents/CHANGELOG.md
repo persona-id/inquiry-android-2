@@ -7,6 +7,11 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## Unreleased
 
+## [v2.10.18] - 2024-03-06
+
+### Fixed
+- Fixed an issue where the camera preview for government ID would be cropped if the sweep animation is disabled.
+
 ## [v2.10.17] - 2024-03-05
 
 ### Fixed
