@@ -7,6 +7,12 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## Unreleased
 
+## [v2.11.0] - 2024-03-27
+
+### Added
+- Added a selfie flow type `configurable_poses` which randomizes the capturing order of selfie poses.
+- Added support for auto-classification for government ID steps.
+
 ## [v2.10.19] - 2024-03-15
 
 ### Added
