@@ -7,6 +7,17 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## Unreleased
 
+## [v2.11.1] - 2024-04-02
+
+### Added
+- Added the ability to set custom assets via the server for the verification processing animation.
+- Added the ability to control the layout axis of the buttons on the review captured government id screen via the server.
+- Added the ability to add optional titles on government id and selfie capture screens.
+- Added the ability to customize the selfie verification processing loading animation via the server.
+
+### Changed
+- Changes the style of the processing screen when auto-classification is enabled.
+
 ## [v2.11.0] - 2024-03-27
 
 ### Added
