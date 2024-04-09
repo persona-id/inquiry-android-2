@@ -7,6 +7,18 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## Unreleased
 
+## [v2.11.3] - 2024-04-09
+
+### Added
+
+- Added the ability to color the back and cancel buttons on the capture screens via the server.
+
+### Changed
+- Improved the messaging for NFC related errors.
+
+### Fixed
+- Fixed several NFC related bugs.
+
 ## [v2.11.2] - 2024-04-05
 
 ### Added
