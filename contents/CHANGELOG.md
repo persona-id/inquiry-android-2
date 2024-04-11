@@ -7,7 +7,16 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## Unreleased
 
+## [v2.11.4] - 2024-04-11
+
+### Fixed
+
+- Make sure the header button color from the server is applied on gov id review screens.
+
+## [v2.11.3] - 2024-04-09
+
 ### Added
+
 - Added the ability to color the back and cancel buttons on the capture screens via the server.
 
 ### Changed
@@ -227,47 +236,6 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 ### Changed
 - Update AGP to 8.0.2 
 
-## [v2.8.8] - 2024-04-10
-
-### Fixed
-
-- Make sure the header button color from the server is applied on gov id review screens.
-
-## [v2.8.7] - 2024-04-09
-
-### Changed
-- Updated to include all changes up to v2.11.3
-
-## [v2.8.6] - 2024-04-04
-
-### Changed
-- Updated to include all changes up to v2.11.1
-
-## [v2.8.5] - 2023-11-27
-
-### Changed
-- Improved support for Government Id NFC.
-
-## [v2.8.4] - 2023-10-30
-
-### Added
-- Added an error code to error results.
-
-## [v2.8.3] - 2023-10-13
-
-### Added
-- Added ability to override device locale via `.locale(String)` method on `InquiryTemplateBuilder` or `InquiryBuilder`.
-
-## [v2.8.2] - 2023-10-04
-
-### Added
-- Added the ability to style buttons in the cancel modal separately from the general step button styles via the server.
-
-## [v2.8.1] - 2023-09-27
-
-### Changed
-- Downgrade Lottie to 4.2.2 due to some customers having compatibility issues with the latest version of Lottie.
-
 ## [v2.8.0] - 2023-07-20
 
 ### Added
@@ -327,13 +295,13 @@ This animation has been replaced with a more subtle sweeping animation around th
 camera preview frame. The new animation is designed to be performant and distraction-free. It is
 rendered with custom code for better performance.
 
-We've also added a button to the government id capture screen that displays capture tips when
+We've also added a button to the government id capture screen that displays capture tips when 
 tapped. This change was made to improve the quality of photos captured by the user.
 
 If you have any questions about these changes, please reach out to your CSM.
 
 ### Fixed
-- Fixed a rare native library crash where the native library could not be found due to an
+- Fixed a rare native library crash where the native library could not be found due to an 
   incompatible architecture.
 
 ## [v2.5.1] - 2023-04-06
@@ -342,7 +310,7 @@ If you have any questions about these changes, please reach out to your CSM.
 - Update dependencies.
 
 ### Fixed
-- Fixed a bug that would cause government id steps to trigger auto capture immediately if auto
+- Fixed a bug that would cause government id steps to trigger auto capture immediately if auto 
   capture is disabled.
 
 ## [v2.5.0] - 2023-04-03
@@ -776,7 +744,7 @@ If you have any questions about these changes, please reach out to your CSM.
 ### Changed
 
 - Skip government ID select screen if only one ID class is available
-- The loading icon for initial inquiry load has been changed to a neutral grey spinner
+- The loading icon for initial inquiry load has been changed to a neutral grey spinner 
 
 ### Fixed
 
