@@ -227,6 +227,12 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 ### Changed
 - Update AGP to 8.0.2 
 
+## [v2.8.8] - 2024-04-10
+
+### Fixed
+
+- Make sure the header button color from the server is applied on gov id review screens.
+
 ## [v2.8.7] - 2024-04-09
 
 ### Changed
