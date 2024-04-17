@@ -7,6 +7,12 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## Unreleased
 
+## [v2.11.5] - 2024-04-15
+
+### Added
+
+- Updated internal fallback mode API
+
 ## [v2.11.4] - 2024-04-11
 
 ### Fixed
