@@ -7,22 +7,28 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## Unreleased
 
+## [v2.11.6] - 2024-04-29
+
+### Fixed
+- Fixed an issue where custom hint assets from the server on pdf417 scans on the government id capture page were not being applied.
+- Fixed an issue where address autocomplete does not pop up sometimes
+
+### Changed
+- Changed the scan NFC card button to show a progress indicator when transitioning to the next step.
+
 ## [v2.11.5] - 2024-04-15
 
 ### Added
-
 - Updated internal fallback mode API
 
 ## [v2.11.4] - 2024-04-11
 
 ### Fixed
-
 - Make sure the header button color from the server is applied on gov id review screens.
 
 ## [v2.11.3] - 2024-04-09
 
 ### Added
-
 - Added the ability to color the back and cancel buttons on the capture screens via the server.
 
 ### Changed
