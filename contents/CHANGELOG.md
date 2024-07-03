@@ -7,6 +7,20 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## Unreleased
 
+## [v2.12.0] - 2024-07-01
+
+### Added
+- Added support for Card Access Number authentication for NFC scanning.
+- Added support for rendering Persona option assets.
+
+### Changed
+- Bumped the server API version.
+- Added support for the international DB component.
+
+### Fixed
+- Fixed an issue where stroke/fill color overrides were not correctly applied to certain illustrations used in the government ID step.
+- Fixed an issue where the review capture image flickers.
+
 ## [v2.11.6] - 2024-04-29
 
 ### Fixed
@@ -98,6 +112,8 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 ## [v2.10.13] - 2024-02-20
 
 ### Fixed
+- Fixed a bug with disabled button styles not being applied during page loads.
+- Fixed odd button behavior where other buttons would show loading spinners even if it was a different button that was tapped. 
 - Fixed an issue where the capture button would overlap with other UI elements on devices with small screens.
 - Fixed an issue where the capture tips modal sometimes appears behind the navigation bar.
 - Fixed a crash that can occur in the government ID or selfie step if the cancel modal is shown and the app is backgrounded.
