@@ -7,11 +7,25 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## Unreleased
 
+## [v2.12.2] - 2024-07-19
+
+### Added
+- Added support for launching inquiries inline (i.e. within a fragment).
+
+### Fixed
+- Fixed an issue with rendering document icon.
+- Fixed an issue where the permission dialog overlaps with system UI.
+
+## [v2.12.1] - 2024-07-18
+
+This is a technical release of v2.12.0.
+
 ## [v2.12.0] - 2024-07-01
 
 ### Added
 - Added support for Card Access Number authentication for NFC scanning.
 - Added support for rendering Persona option assets.
+- Added support for launching Inquiries inline.
 
 ### Changed
 - Bumped the server API version.
