@@ -7,6 +7,23 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## Unreleased
 
+### Added
+- Added support for collecting GPS data
+
+## [v2.12.3] - 2024-08-06
+
+### Added
+- Added options to the inline inquiry builder to toggle whether inline inquiries can control the system UI.
+
+### Changed
+- Updated the design of the government ID NFC bottom sheet.
+- Marked inline inquiry API as experimental.
+
+### Fixed
+- Style government ID NFC bottom sheet based on SST (server sided theming)
+- Support markdown on texts for permissions related dialogs.
+- Fixed a crash that can occur if an inquiry flow errors while the app is in the background.
+
 ## [v2.12.2] - 2024-07-19
 
 ### Added
