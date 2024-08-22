@@ -10,6 +10,13 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 ### Added
 - Added support for collecting GPS data
 
+## [v2.12.4] - 2024-08-22
+
+### Fixed
+- Fixed a bug where the create reusable Persona sheet would stick around after it dismisses.
+- Fixed a rare crash that can occur on UI step screens if the app is killed and restored.
+- Fixed a bug where the government ID NFC hint text is cut off in certain cases.
+
 ## [v2.12.3] - 2024-08-06
 
 ### Added
