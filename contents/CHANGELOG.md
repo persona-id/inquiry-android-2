@@ -7,6 +7,8 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## Unreleased
 
+## [v2.12.5] - 2024-08-29
+
 ### Added
 - Added support for collecting GPS data
 
