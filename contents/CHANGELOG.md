@@ -7,6 +7,11 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## Unreleased
 
+## [v2.12.6] - 2024-09-04
+
+### Fixed
+- Fixed a bug the initial spinner will not spin when using certain versions of Lottie.
+
 ## [v2.12.5] - 2024-08-29
 
 ### Added
