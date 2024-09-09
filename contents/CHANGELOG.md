@@ -7,6 +7,11 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## Unreleased
 
+## [v2.12.7] - 2024-09-09
+
+### Added
+- Added support for field types Choices and MultiChoices.
+
 ## [v2.12.6] - 2024-09-04
 
 ### Fixed
