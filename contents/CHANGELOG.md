@@ -7,10 +7,16 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## Unreleased
 
+## [v2.12.8] - 2024-09-13
+
+### Added
+- Added support for header icons specified by the server on the government ID select screen.
+
 ## [v2.12.7] - 2024-09-09
 
 ### Added
 - Added support for field types Choices and MultiChoices.
+- Added an error dialog when using government ID NFC but the device does not have a NFC reader.
 
 ## [v2.12.6] - 2024-09-04
 
