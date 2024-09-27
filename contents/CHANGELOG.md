@@ -7,6 +7,11 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## Unreleased
 
+## [v2.12.9] - 2024-09-27
+
+### Fixed
+- Fixed a class name collision issue when the Inquiry SDK is used with other 3rd party libraries.
+
 ## [v2.12.8] - 2024-09-13
 
 ### Added
@@ -21,12 +26,13 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 ## [v2.12.6] - 2024-09-04
 
 ### Fixed
-- Fixed a bug the initial spinner will not spin when using certain versions of Lottie.
+- Fixed a bug where the initial spinner will not spin when using certain versions of Lottie.
 
 ## [v2.12.5] - 2024-08-29
 
 ### Added
 - Added support for collecting GPS data
+- Added event logs when inquiry is launched inline.
 
 ## [v2.12.4] - 2024-08-22
 
