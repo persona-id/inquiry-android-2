@@ -7,6 +7,11 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## Unreleased
 
+## [v2.12.10] - 2024-09-30
+
+### Fixed
+- Fixed a bug where the camera preview on the selfie step will not load on certain devices.
+
 ## [v2.12.9] - 2024-09-27
 
 ### Fixed
