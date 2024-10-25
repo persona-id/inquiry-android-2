@@ -7,6 +7,27 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## Unreleased
 
+## [v2.12.11] - 2024-10-25
+
+### Added
+- Added an option to use simulated government ID NFC data in sandbox mode to make testing in sandbox
+  mode easier. This option is on by default. The option can be changed by long pressing on the 
+  sandbox button.
+- Added network error logging for diagnostic purposes.
+
+### Changed
+- Update AGP to 8.3.2 and Gradle to 8.7
+- Update dependencies.
+- Now returning SessionTokenError for ErrorCode when inquiry is unauthorized.
+
+### Fixed
+- Fixed a bug where a loading indicator is not shown on the submit button if the submit button is
+  nested within a component group.
+- Fixed a bug where a loading indicator is not shown if the submit button is hidden. In this case,
+  a loading indicator is shown on all components that support it (eg. other buttons).
+- Fixed a bug where UI steps with government ID NFC will not auto-submit if the submit button is
+  nested within a component group.
+
 ## [v2.12.10] - 2024-09-30
 
 ### Fixed
