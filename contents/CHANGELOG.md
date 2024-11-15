@@ -7,6 +7,15 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## Unreleased
 
+## [v2.12.12] - 2024-11-15
+
+### Changed
+- Inquiries launched inline will apply the given theme (if any) to the inquiry fragment.
+- Cancel modal will dismiss if "Cancel" is selected.
+
+### Fixed
+- Fixed an rare/improbable crash in the selfie step.
+
 ## [v2.12.11] - 2024-10-25
 
 ### Added
