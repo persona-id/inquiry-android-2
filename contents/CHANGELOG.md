@@ -7,6 +7,11 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## Unreleased
 
+## [v2.12.13] - 2024-11-25
+
+### Fixed
+- Fixed a bug where changes to an input select component does not trigger a render update.
+
 ## [v2.12.12] - 2024-11-15
 
 ### Changed
