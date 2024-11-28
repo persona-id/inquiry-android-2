@@ -7,6 +7,17 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## Unreleased
 
+## [v2.12.14] - 2024-11-27
+
+### Changed
+- Updated the layout for the government ID capture screen to handle smaller screens better.
+- Updated the layout for the selfie capture screen to handle smaller screens better.
+
+### Fixed
+- Fixed a rare crash when loading custom fonts.
+- Fixed a bug where a custom font cannot be found.
+- Fixed a bug where applying a theme when launching an inquiry in inline mode will change the theme of the host activity's context.
+
 ## [v2.12.13] - 2024-11-25
 
 ### Fixed
