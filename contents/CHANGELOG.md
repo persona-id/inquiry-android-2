@@ -7,6 +7,11 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## Unreleased
 
+## [v2.12.15] - 2024-12-05
+
+### Fixed
+- Fixed a rare issue where the document file select picker might launch multiple times.
+
 ## [v2.12.14] - 2024-11-27
 
 ### Changed
