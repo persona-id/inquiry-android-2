@@ -7,6 +7,11 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## Unreleased
 
+## [v2.12.16] - 2024-12-17
+
+### Added
+- Published the Sentinel SDK.
+
 ## [v2.12.15] - 2024-12-05
 
 ### Fixed
