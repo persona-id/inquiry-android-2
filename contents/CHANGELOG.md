@@ -7,6 +7,16 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## Unreleased
 
+## [v2.12.17] - 2024-12-19
+
+### Added
+- Added support for selfie previews.
+- Added support for selfie auto-capture customization.
+- Added support for selfie manual-capture customization.
+
+### Fixed
+- Fixed a minor issue with the Sentinel SDK.
+
 ## [v2.12.16] - 2024-12-17
 
 ### Added
