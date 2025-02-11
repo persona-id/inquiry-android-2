@@ -7,6 +7,11 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## Unreleased
 
+## [v2.13.1] - 2025-02-11
+
+### Fixed
+- Fixed a crash that occurred on the final steps of inquiries that are "complete" steps rather than "ui" steps.
+
 ## [v2.13.0] - 2025-02-03
 
 ### Added
