@@ -7,6 +7,14 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## Unreleased
 
+## [v2.13.2] - 2025-02-20
+
+### Changed
+- Changed government ID auto-classification's manual classification fallback screen to automatically select the country/ID type if there is only one option.
+
+### Fixed
+- Fixed a bug where checkbox text were not correctly aligned with the checkbox.
+
 ## [v2.13.1] - 2025-02-11
 
 ### Fixed
@@ -15,7 +23,6 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 ## [v2.13.0] - 2025-02-03
 
 ### Added
-
 - Added the ability for the server to instruct the client to use fallback mode automatically. To use this, either pass in FallbackMode.defer to the .fallbackMode function on the InquiryTemplate builder, or pass in a valid fallback inquiry id (starts with `iqfs`) and a valid fallback session token (using the .sessionToken function) on the Inquiry builder.
 
 ### Changed
