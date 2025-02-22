@@ -7,6 +7,11 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## Unreleased
 
+## [v2.13.3] - 2025-02-21
+
+### Added
+- Added support in the Sentinel SDK for Java applications.
+
 ## [v2.13.2] - 2025-02-20
 
 ### Changed
