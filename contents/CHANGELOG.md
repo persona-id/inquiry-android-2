@@ -7,6 +7,15 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## Unreleased
 
+## [v2.13.4] - 2025-02-25
+
+### Changed
+- Inquiries launched in inline mode will no longer automatically remove themselves once the inquiry is complete. It is the responsibility of the implementor to clean up after the inquiry is done.
+- Changed Sentinel SDK's API/public interface to Kotlin instead of Java.
+
+### Fixed
+- Fixed a rare crash that can occur at the end of an inquiry.
+
 ## [v2.13.3] - 2025-02-21
 
 ### Added
