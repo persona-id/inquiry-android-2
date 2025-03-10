@@ -7,9 +7,18 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## Unreleased
 
+## [v2.14.0] - 2025-03-10
+
+### Changed
+- Updated the SDK to be compatible for use within an on-demand dynamic feature module.
+
+### Fixed
+- Fixed a rare crash when uploading files in the government ID step.
+
 ## [v2.13.4] - 2025-02-25
 
 ### Changed
+- Update dependencies.
 - Inquiries launched in inline mode will no longer automatically remove themselves once the inquiry is complete. It is the responsibility of the implementor to clean up after the inquiry is done.
 - Changed Sentinel SDK's API/public interface to Kotlin instead of Java.
 
