@@ -7,6 +7,12 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## Unreleased
 
+# [v2.14.1] - 2025-03-11
+
+### Added
+- Added support for vertical alignment on processing screens.
+- Added support for auto submit on UI step button components.
+
 ## [v2.14.0] - 2025-03-10
 
 ### Changed
