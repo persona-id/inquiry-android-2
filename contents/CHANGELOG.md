@@ -7,6 +7,12 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## Unreleased
 
+# [v2.14.2] - 2025-03-13
+
+### Changed
+
+- Networking optimizations.
+
 # [v2.14.1] - 2025-03-11
 
 ### Added
