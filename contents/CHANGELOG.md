@@ -7,6 +7,14 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## Unreleased
 
+# [v2.15.0] - 2025-03-18
+
+### Changed
+- `RoutingCountry` enum, and `InquiryTemplateBuilder.routingCountry(string)`, `InquiryBuilder.routingCountry(string)` methods marked as deprecated. These will be fully removed as a breaking change in a coming release, please remove usage now to avoid compilation issues in future.
+
+### Fixed
+- Fixed a bug where UI elements are disabled during background polling when they should not be.
+
 # [v2.14.2] - 2025-03-13
 
 ### Changed
