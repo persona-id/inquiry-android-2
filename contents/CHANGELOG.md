@@ -7,6 +7,11 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## Unreleased
 
+# [v2.15.2] - 2025-04-01
+
+### Fixed
+- Fixed an issue where the guide image on the government ID capture screen would shrink over time.
+
 # [v2.15.1] - 2025-03-31
 
 ### Changed
