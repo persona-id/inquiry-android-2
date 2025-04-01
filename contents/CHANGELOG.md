@@ -7,10 +7,19 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## Unreleased
 
+# [v2.15.1] - 2025-03-31
+
+### Changed
+- Updated some dependencies to their latest patch version to resolve some bugs.
+
+### Fixed
+- Fixed an issue where chevrons would not render in government id type select components on UI steps.
+
 # [v2.15.0] - 2025-03-18
 
 ### Changed
 - `RoutingCountry` enum, and `InquiryTemplateBuilder.routingCountry(string)`, `InquiryBuilder.routingCountry(string)` methods marked as deprecated. These will be fully removed as a breaking change in a coming release, please remove usage now to avoid compilation issues in future.
+- Hide the hint box on the government ID capture screen if the hint text is empty.
 
 ### Fixed
 - Fixed a bug where UI elements are disabled during background polling when they should not be.
