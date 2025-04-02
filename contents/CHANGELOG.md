@@ -7,6 +7,11 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## Unreleased
 
+# [v2.15.3] - 2025-04-02
+
+### Fixed
+- Fixed a bug where transitions fail when using a one-time-link code.
+
 # [v2.15.2] - 2025-04-01
 
 ### Fixed
