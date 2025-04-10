@@ -7,6 +7,18 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## Unreleased
 
+# [v2.16.0] - 2025-04-09
+
+### Added
+- Added `.accountReferenceId(_)` method to `SentinelEvent.Builder` for Sentinel SDK. Use this to link a sentinel transaction to an account.
+
+### Changed
+- Update dependencies.
+- Bumped Kotlin version to version 2.0.21.
+
+### Fixed
+- Fixed a race condition in the document step that can lead to a crash in rare cases.
+
 # [v2.15.3] - 2025-04-02
 
 ### Fixed
