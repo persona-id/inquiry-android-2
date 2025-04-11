@@ -7,6 +7,15 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## Unreleased
 
+# [v2.16.1] - 2025-04-11
+
+### Added
+- Added `.handleBackPress(_)` to `InlineInquiryBuilder` to control whether the inquiry screen should handle back presses when launched inline.
+
+### Fixed
+- Fixed a crash in the document step if the depending project also depends on `kotlin-reflect`.
+- Fixed a rare crash on the government ID preview screen.
+
 # [v2.16.0] - 2025-04-09
 
 ### Added
