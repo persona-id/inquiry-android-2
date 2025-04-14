@@ -7,18 +7,58 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## Unreleased
 
-# [v2.14.4] - 2025-04-14
+# [v2.16.2] - 2025-04-14
 
 ### Fixed
 - Fixed a bug where `InlineInquiryScreen.goBack()` would crash if handleBackPress is set to false.
 
-# [v2.14.3] - 2025-04-11
+# [v2.16.1] - 2025-04-11
 
 ### Added
 - Added `.handleBackPress(_)` to `InlineInquiryBuilder` to control whether the inquiry screen should handle back presses when launched inline.
 
 ### Fixed
+- Fixed a crash in the document step if the depending project also depends on `kotlin-reflect`.
 - Fixed a rare crash on the government ID preview screen.
+
+# [v2.16.0] - 2025-04-09
+
+### Added
+- Added `.accountReferenceId(_)` method to `SentinelEvent.Builder` for Sentinel SDK. Use this to link a sentinel transaction to an account.
+
+### Changed
+- Update dependencies.
+- Bumped Kotlin version to version 2.0.21.
+
+### Fixed
+- Fixed a race condition in the document step that can lead to a crash in rare cases.
+
+# [v2.15.3] - 2025-04-02
+
+### Fixed
+- Fixed a bug where transitions fail when using a one-time-link code.
+
+# [v2.15.2] - 2025-04-01
+
+### Fixed
+- Fixed an issue where the guide image on the government ID capture screen would shrink over time.
+
+# [v2.15.1] - 2025-03-31
+
+### Changed
+- Updated some dependencies to their latest patch version to resolve some bugs.
+
+### Fixed
+- Fixed an issue where chevrons would not render in government id type select components on UI steps.
+
+# [v2.15.0] - 2025-03-18
+
+### Changed
+- `RoutingCountry` enum, and `InquiryTemplateBuilder.routingCountry(string)`, `InquiryBuilder.routingCountry(string)` methods marked as deprecated. These will be fully removed as a breaking change in a coming release, please remove usage now to avoid compilation issues in future.
+- Hide the hint box on the government ID capture screen if the hint text is empty.
+
+### Fixed
+- Fixed a bug where UI elements are disabled during background polling when they should not be.
 
 # [v2.14.2] - 2025-03-13
 
