@@ -7,6 +7,11 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## Unreleased
 
+# [v2.14.4] - 2025-04-14
+
+### Fixed
+- Fixed a bug where `InlineInquiryScreen.goBack()` would crash if handleBackPress is set to false.
+
 # [v2.14.3] - 2025-04-11
 
 ### Added
