@@ -7,6 +7,15 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## Unreleased
 
+# [v2.16.3] - 2025-04-22
+
+### Changed
+- Send component field values of the current screen when Reusable Personas is used.
+
+### Fixed
+- Fixed a bug where auto-capture sometimes would not work on a valid MRZ code.
+- Fixed a crash when launching an inquiry as a dynamic feature module.
+
 # [v2.16.2] - 2025-04-14
 
 ### Fixed
