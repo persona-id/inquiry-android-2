@@ -7,6 +7,11 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## Unreleased
 
+# [v2.17.0] - 2025-04-30
+
+### Changed
+- Optimized the Sentinel SDK size (~300kb after optimization) by changing module structures.
+
 # [v2.16.4] - 2025-04-29
 
 ### Added
