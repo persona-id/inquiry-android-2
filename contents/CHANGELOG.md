@@ -7,6 +7,14 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## Unreleased
 
+# [v2.16.4] - 2025-04-29
+
+### Added
+- Added support for disabled and errored styles from the server for input select components.
+
+### Changed
+- Modify how component field values are sent up when Reusable Personas is used.
+
 # [v2.16.3] - 2025-04-22
 
 ### Changed
