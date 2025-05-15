@@ -7,6 +7,12 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## Unreleased
 
+# [v2.17.1] - 2025-05-15
+
+### Fixed
+- We will now apply theme colors to the default document prompt screen page buttons and image.
+- Fixed a race condition where a document is not uploaded when there are two or more document steps in an inquiry flow.
+
 # [v2.17.0] - 2025-04-30
 
 ### Changed
