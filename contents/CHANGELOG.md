@@ -7,6 +7,12 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## Unreleased
 
+# [v2.17.2] - 2025-05-23
+
+### Fixed
+- Fixed an issue where localization overrides are not applied correctly when auto-classification is on.
+- Fixed a crash in the document step when used within a react native project. 
+
 # [v2.17.1] - 2025-05-15
 
 ### Fixed
