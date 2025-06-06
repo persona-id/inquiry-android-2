@@ -7,6 +7,11 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## Unreleased
 
+# [v2.17.3] - 2025-06-06
+
+### Changed
+- No longer show the add document button if the file limit is reached in a document verification.
+
 # [v2.17.2] - 2025-05-23
 
 ### Fixed
