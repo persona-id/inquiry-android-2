@@ -7,6 +7,18 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## Unreleased
 
+# [v2.18.0] - 2025-06-20
+
+### Added
+- Added support for downloading and using custom fonts at runtime.
+
+### Changed
+- **Breaking change** InquiryEvent.StartEvent no longer indicates when an Inquiry is created. Instead the event is fired whenever an Inquiry session is created.
+
+### Fixed
+- Fixed a bug where the wrong background color was being applied to focused elements in input select component dropdowns.
+- Ensure files created by SDK are deleted once the inquiry completes.
+
 # [v2.17.3] - 2025-06-06
 
 ### Changed
