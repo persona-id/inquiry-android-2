@@ -7,6 +7,11 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## Unreleased
 
+# [v2.18.1] - 2025-06-23
+
+### Fixed
+- Fixed malformed session token returned by InquiryEvent.StartEvent.
+
 # [v2.18.0] - 2025-06-20
 
 ### Added
