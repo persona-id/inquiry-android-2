@@ -7,6 +7,17 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## Unreleased
 
+# [v2.19.0] - 2025-07-01
+
+### Added
+- Added support for 16kb page sizes.
+
+### Changed
+- Greatly increased the maximum number of UI components on a UI step before a TransactionTooLargeException exception is hit when the Activity is killed. The approximate increase is about 3x, from ~45 components to a theoretical ~135 components.
+
+### Fixed
+- Fix a crash that can occur after NFC is done scanning when SDK is used within a dynamic feature module.
+
 # [v2.18.1] - 2025-06-23
 
 ### Fixed
