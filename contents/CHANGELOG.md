@@ -7,6 +7,14 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## Unreleased
 
+# [v2.20.0] - 2025-07-03
+
+### Added
+- Added support for Selfie V1 design.
+
+### Fixed
+- Fix a crash when upload fails on the government ID step.
+
 # [v2.19.0] - 2025-07-01
 
 ### Added
