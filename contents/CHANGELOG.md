@@ -7,6 +7,19 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## Unreleased
 
+# [v2.21.0] - 2025-07-30
+
+### Added
+- Added country picker to Phone Number Input component
+
+### Fixed
+- Fix a crash when upload fails on the government ID step.
+- Fix a rare crash in the ID NFC scan screen when the app is killed and recreated.
+- Fix check box being editable even when transitioning to the next UI step.
+- Fix a minor padding issue with the Selfie V1 design.
+- Fix a bug where NFC would error on certain days of the month.
+- Fix a visual bug where errors are not cleared on the address component when they are resolved.
+
 # [v2.20.0] - 2025-07-03
 
 ### Added
