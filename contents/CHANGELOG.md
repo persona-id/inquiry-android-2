@@ -7,6 +7,26 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## Unreleased
 
+# [v2.22.0] - 2025-09-03
+
+### Added 
+- Added Integration Step to support 3rd party integration flows.
+
+### Changed
+- Bumped up the compile SDK from 35 to 36
+- Bumped up the AGP version from 8.7.3 to 8.9.1
+- Bumped up androidx.browser:browser library from 1.8.0 to 1.9.0
+- Disable the switch camera button in the Selfie V1 design for left and right pose capture.
+- Changed the previews on the selfie review screen to be mirrored horizontally so that previews match the labels.
+
+### Fixed
+- Fix a bug where a transition animation would play when "Verify with Reusable Persona" is clicked but declined.
+- Fix a bug where selfie capture video recording errors after the app is backgrounded and then brought to the foreground again.
+- Fix a bug where pressing back on the selfie capture screen will not transition to the instructions screen.
+- Fix a memory leak on the selfie step.
+- Apply the correct background color to the government ID NFC modal and the error modal.
+- Fix a bug where the government ID NFC modal text can be cut off.
+
 # [v2.21.0] - 2025-07-30
 
 ### Added
