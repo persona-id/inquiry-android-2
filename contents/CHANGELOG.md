@@ -7,11 +7,6 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## Unreleased
 
-# [v2.22.1] - 2025-09-08
-
-### Fixed
-- Changed the SDK to return a `SessionTokenError` instead of a generic `NetworkError` if a step transition fails due to an invalid session token. 
-
 # [v2.22.0] - 2025-09-03
 
 ### Added 
@@ -21,7 +16,6 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 - Bumped up the compile SDK from 35 to 36
 - Bumped up the AGP version from 8.7.3 to 8.9.1
 - Bumped up androidx.browser:browser library from 1.8.0 to 1.9.0
-- Upgraded Coil dependency from Coil 2 to Coil 3.
 - Disable the switch camera button in the Selfie V1 design for left and right pose capture.
 - Changed the previews on the selfie review screen to be mirrored horizontally so that previews match the labels.
 
