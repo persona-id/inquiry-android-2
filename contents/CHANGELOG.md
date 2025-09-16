@@ -7,6 +7,12 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## Unreleased
 
+# [v2.22.2] - 2025-09-16
+
+### Fixed
+- Fixed a bug where the wrong background color was sometimes applied on document steps while in dark mode.
+- Fixed a bug where the SDK does not send GPS information even if it's required by the template.
+
 # [v2.22.1] - 2025-09-08
 
 ### Fixed
