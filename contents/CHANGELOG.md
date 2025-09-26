@@ -7,8 +7,13 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## Unreleased
 
+# [v2.24.0] - 2025-09-26
+
 ### Added
-- Added support for mdoc components that uses Google Wallet to request an ID.
+- Added `onEventListener` to `Inquiry`.
+
+### Fixed
+- Fixed a crash if the Inquiry activity is killed and recreated.
 
 # [v2.23.0] - 2025-09-24
 
