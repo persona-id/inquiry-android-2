@@ -7,6 +7,15 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## Unreleased
 
+# [v2.25.0] - 2025-10-10
+
+### Fixed
+- Fixed a visual bug where back captures of gov id images would appear to be slightly cutoff during end user review.
+
+### Added
+- Added `sna-impl` module that supports Phone Number Silent Network Authentication verification.
+- Added support for credit card collection.
+
 # [v2.24.0] - 2025-09-26
 
 ### Added
@@ -14,6 +23,10 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ### Fixed
 - Fixed a crash if the Inquiry activity is killed and recreated.
+
+### Changed
+- Improved NFC UX
+- Bumped up the Lottie version from 4.2.2 to 6.6.7
 
 # [v2.23.0] - 2025-09-24
 
