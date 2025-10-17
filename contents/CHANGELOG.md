@@ -7,6 +7,11 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## Unreleased
 
+# [v2.25.1] - 2025-10-16
+
+### Fixed
+- Fixed memory leak after a selfie inquiry is finished. 
+
 # [v2.25.0] - 2025-10-10
 
 ### Fixed
