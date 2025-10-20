@@ -7,6 +7,11 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## Unreleased
 
+# [v2.25.2] - 2025-10-20
+
+### Added
+- Added support for a short capture tips blurb section below the government id capture feed.
+
 # [v2.25.1] - 2025-10-16
 
 ### Fixed
