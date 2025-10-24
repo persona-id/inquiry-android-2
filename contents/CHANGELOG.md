@@ -7,6 +7,15 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## Unreleased
 
+# [v2.25.3] - 2025-10-24
+
+### Added
+- Added an animation to the camera loading for government id captures. 
+
+### Fixed
+- Fixed a bug where the webRTC connection would not fully shut down if the inquiry was cancelled while the capture screen was showing.
+- Fix a back transition issue on the government id step when WebRTC is on.
+
 # [v2.25.2] - 2025-10-20
 
 ### Added
