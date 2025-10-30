@@ -7,6 +7,12 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## Unreleased
 
+# [v2.25.4] - 2025-10-30
+
+### Fixed
+- Fixed checkbox styling issue
+- Fixed a rare crash on the government ID step if the user cancels the inquiry flow immediately after pressing submit.
+
 # [v2.25.3] - 2025-10-24
 
 ### Added
@@ -14,7 +20,7 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ### Fixed
 - Fixed a bug where the webRTC connection would not fully shut down if the inquiry was cancelled while the capture screen was showing.
-- Fix a back transition issue on the government id step when WebRTC is on.
+- Fixed a back transition issue on the government id step when WebRTC is on.
 
 # [v2.25.2] - 2025-10-20
 
