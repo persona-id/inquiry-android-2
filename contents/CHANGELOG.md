@@ -7,6 +7,12 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## Unreleased
 
+# [v2.25.5] - 2025-10-31
+
+### Fixed
+- Fixed NFC scanning sheet layout issue.
+- Fixed an issue where NFC scanning remained active even after an error dialog appeared.
+
 # [v2.25.4] - 2025-10-30
 
 ### Fixed
