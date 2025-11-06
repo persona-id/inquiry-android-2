@@ -7,6 +7,14 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## Unreleased
 
+# [v2.26.0] - 2025-11-06
+
+### Added
+- Added support for Mdoc component with Google Wallet.
+
+### Fixed
+- Fixed a crash during phone number silent network authentication.
+
 # [v2.25.5] - 2025-10-31
 
 ### Fixed
