@@ -7,7 +7,22 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## Unreleased
 
-# [v2.26.0] - 2025-11-06
+## [v2.27.0] - 2025-11-13
+
+### Added
+- Added troubleshooting tips to NFC step
+- Added progress bar to NFC scanning sheet
+
+### Changed
+- The check animation at the end of the capture in old selfie flows now respects the color that is sent from the server. Note that this means it will no longer be green by default and will instead use your primary icon stroke color defined on your theme.
+- Changed cancel modal to stack buttons vertically to allow more space to fit longer localized strings.
+
+### Fixed
+- Fixed incorrect overlay is being used for government ID back side capture.
+- Fixed a bug where GPS requirements are lost on step transition in certain cases.
+- Fixed a bug where the document step will misbehave if resumed when the file upload limit is 1.
+
+## [v2.26.0] - 2025-11-06
 
 ### Added
 - Added support for Mdoc component with Google Wallet.
@@ -15,19 +30,19 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 ### Fixed
 - Fixed a crash during phone number silent network authentication.
 
-# [v2.25.5] - 2025-10-31
+## [v2.25.5] - 2025-10-31
 
 ### Fixed
 - Fixed NFC scanning sheet layout issue.
 - Fixed an issue where NFC scanning remained active even after an error dialog appeared.
 
-# [v2.25.4] - 2025-10-30
+## [v2.25.4] - 2025-10-30
 
 ### Fixed
 - Fixed checkbox styling issue
 - Fixed a rare crash on the government ID step if the user cancels the inquiry flow immediately after pressing submit.
 
-# [v2.25.3] - 2025-10-24
+## [v2.25.3] - 2025-10-24
 
 ### Added
 - Added an animation to the camera loading for government id captures. 
@@ -36,17 +51,17 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 - Fixed a bug where the webRTC connection would not fully shut down if the inquiry was cancelled while the capture screen was showing.
 - Fixed a back transition issue on the government id step when WebRTC is on.
 
-# [v2.25.2] - 2025-10-20
+## [v2.25.2] - 2025-10-20
 
 ### Added
 - Added support for a short capture tips blurb section below the government id capture feed.
 
-# [v2.25.1] - 2025-10-16
+## [v2.25.1] - 2025-10-16
 
 ### Fixed
 - Fixed memory leak after a selfie inquiry is finished. 
 
-# [v2.25.0] - 2025-10-10
+## [v2.25.0] - 2025-10-10
 
 ### Fixed
 - Fixed a visual bug where back captures of gov id images would appear to be slightly cutoff during end user review.
@@ -55,7 +70,7 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 - Added `sna-impl` module that supports Phone Number Silent Network Authentication verification.
 - Added support for credit card collection.
 
-# [v2.24.0] - 2025-09-26
+## [v2.24.0] - 2025-09-26
 
 ### Added
 - Added `onEventListener` to `Inquiry`.
@@ -67,7 +82,7 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 - Improved NFC UX
 - Bumped up the Lottie version from 4.2.2 to 6.6.7
 
-# [v2.23.0] - 2025-09-24
+## [v2.23.0] - 2025-09-24
 
 ### Added
 - Added support for the "address auto-complete method" attribute on address components.
@@ -75,18 +90,18 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 ### Fixed
 - Fixed a potential crash in the document step.
 
-# [v2.22.2] - 2025-09-16
+## [v2.22.2] - 2025-09-16
 
 ### Fixed
 - Fixed a bug where the wrong background color was sometimes applied on document steps while in dark mode.
 - Fixed a bug where the SDK does not send GPS information even if it's required by the template.
 
-# [v2.22.1] - 2025-09-08
+## [v2.22.1] - 2025-09-08
 
 ### Fixed
 - Changed the SDK to return a `SessionTokenError` instead of a generic `NetworkError` if a step transition fails due to an invalid session token. 
 
-# [v2.22.0] - 2025-09-03
+## [v2.22.0] - 2025-09-03
 
 ### Added 
 - Added Integration Step to support 3rd party integration flows.
@@ -107,7 +122,7 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 - Apply the correct background color to the government ID NFC modal and the error modal.
 - Fix a bug where the government ID NFC modal text can be cut off.
 
-# [v2.21.0] - 2025-07-30
+## [v2.21.0] - 2025-07-30
 
 ### Added
 - Added country picker to Phone Number Input component
@@ -120,7 +135,7 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 - Fix a bug where NFC would error on certain days of the month.
 - Fix a visual bug where errors are not cleared on the address component when they are resolved.
 
-# [v2.20.0] - 2025-07-03
+## [v2.20.0] - 2025-07-03
 
 ### Added
 - Added support for Selfie V1 design.
@@ -128,7 +143,7 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 ### Fixed
 - Fix a crash when upload fails on the government ID step.
 
-# [v2.19.0] - 2025-07-01
+## [v2.19.0] - 2025-07-01
 
 ### Added
 - Added support for 16kb page sizes.
@@ -139,12 +154,12 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 ### Fixed
 - Fix a crash that can occur after NFC is done scanning when SDK is used within a dynamic feature module.
 
-# [v2.18.1] - 2025-06-23
+## [v2.18.1] - 2025-06-23
 
 ### Fixed
 - Fixed malformed session token returned by InquiryEvent.StartEvent.
 
-# [v2.18.0] - 2025-06-20
+## [v2.18.0] - 2025-06-20
 
 ### Added
 - Added support for downloading and using custom fonts at runtime.
@@ -156,29 +171,29 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 - Fixed a bug where the wrong background color was being applied to focused elements in input select component dropdowns.
 - Ensure files created by SDK are deleted once the inquiry completes.
 
-# [v2.17.3] - 2025-06-06
+## [v2.17.3] - 2025-06-06
 
 ### Changed
 - No longer show the add document button if the file limit is reached in a document verification.
 
-# [v2.17.2] - 2025-05-23
+## [v2.17.2] - 2025-05-23
 
 ### Fixed
 - Fixed an issue where localization overrides are not applied correctly when auto-classification is on.
 - Fixed a crash in the document step when used within a react native project. 
 
-# [v2.17.1] - 2025-05-15
+## [v2.17.1] - 2025-05-15
 
 ### Fixed
 - We will now apply theme colors to the default document prompt screen page buttons and image.
 - Fixed a race condition where a document is not uploaded when there are two or more document steps in an inquiry flow.
 
-# [v2.17.0] - 2025-04-30
+## [v2.17.0] - 2025-04-30
 
 ### Changed
 - Optimized the Sentinel SDK size (~300kb after optimization) by changing module structures.
 
-# [v2.16.4] - 2025-04-29
+## [v2.16.4] - 2025-04-29
 
 ### Added
 - Added support for disabled and errored styles from the server for input select components.
@@ -186,7 +201,7 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 ### Changed
 - Modify how component field values are sent up when Reusable Personas is used.
 
-# [v2.16.3] - 2025-04-22
+## [v2.16.3] - 2025-04-22
 
 ### Changed
 - Send component field values of the current screen when Reusable Personas is used.
@@ -195,12 +210,12 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 - Fixed a bug where auto-capture sometimes would not work on a valid MRZ code.
 - Fixed a crash when launching an inquiry as a dynamic feature module.
 
-# [v2.16.2] - 2025-04-14
+## [v2.16.2] - 2025-04-14
 
 ### Fixed
 - Fixed a bug where `InlineInquiryScreen.goBack()` would crash if handleBackPress is set to false.
 
-# [v2.16.1] - 2025-04-11
+## [v2.16.1] - 2025-04-11
 
 ### Added
 - Added `.handleBackPress(_)` to `InlineInquiryBuilder` to control whether the inquiry screen should handle back presses when launched inline.
@@ -209,7 +224,7 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 - Fixed a crash in the document step if the depending project also depends on `kotlin-reflect`.
 - Fixed a rare crash on the government ID preview screen.
 
-# [v2.16.0] - 2025-04-09
+## [v2.16.0] - 2025-04-09
 
 ### Added
 - Added `.accountReferenceId(_)` method to `SentinelEvent.Builder` for Sentinel SDK. Use this to link a sentinel transaction to an account.
@@ -221,17 +236,17 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 ### Fixed
 - Fixed a race condition in the document step that can lead to a crash in rare cases.
 
-# [v2.15.3] - 2025-04-02
+## [v2.15.3] - 2025-04-02
 
 ### Fixed
 - Fixed a bug where transitions fail when using a one-time-link code.
 
-# [v2.15.2] - 2025-04-01
+## [v2.15.2] - 2025-04-01
 
 ### Fixed
 - Fixed an issue where the guide image on the government ID capture screen would shrink over time.
 
-# [v2.15.1] - 2025-03-31
+## [v2.15.1] - 2025-03-31
 
 ### Changed
 - Updated some dependencies to their latest patch version to resolve some bugs.
@@ -239,7 +254,7 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 ### Fixed
 - Fixed an issue where chevrons would not render in government id type select components on UI steps.
 
-# [v2.15.0] - 2025-03-18
+## [v2.15.0] - 2025-03-18
 
 ### Changed
 - `RoutingCountry` enum, and `InquiryTemplateBuilder.routingCountry(string)`, `InquiryBuilder.routingCountry(string)` methods marked as deprecated. These will be fully removed as a breaking change in a coming release, please remove usage now to avoid compilation issues in future.
@@ -248,13 +263,13 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 ### Fixed
 - Fixed a bug where UI elements are disabled during background polling when they should not be.
 
-# [v2.14.2] - 2025-03-13
+## [v2.14.2] - 2025-03-13
 
 ### Changed
 
 - Networking optimizations.
 
-# [v2.14.1] - 2025-03-11
+## [v2.14.1] - 2025-03-11
 
 ### Added
 - Added support for vertical alignment on processing screens.
