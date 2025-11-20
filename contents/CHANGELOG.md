@@ -7,6 +7,11 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## Unreleased
 
+## [v2.28.0] - 2025-11-20
+
+### Added
+- Added support for advanced customizations.
+
 ## [v2.27.0] - 2025-11-13
 
 ### Added
@@ -16,6 +21,9 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 ### Changed
 - The check animation at the end of the capture in old selfie flows now respects the color that is sent from the server. Note that this means it will no longer be green by default and will instead use your primary icon stroke color defined on your theme.
 - Changed cancel modal to stack buttons vertically to allow more space to fit longer localized strings.
+
+### Changed
+- Bumped the server API version.
 
 ### Fixed
 - Fixed incorrect overlay is being used for government ID back side capture.
