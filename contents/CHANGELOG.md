@@ -7,6 +7,17 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## Unreleased
 
+## [v2.29.0] - 2025-11-24
+
+### Added 
+- Added support for an inquiry's `redirect_uri` which allows the sdk to redirect upon completion. You can set the redirect URI when creating an inquiry or in your inquiry template's configuration.
+
+```kotlin
+Inquiry.fromTemplate(templateId)
+  .redirectUri("http://example.com")
+  .build()
+```
+
 ## [v2.28.0] - 2025-11-20
 
 ### Added
