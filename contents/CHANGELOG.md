@@ -7,6 +7,11 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## Unreleased
 
+## [v2.29.1] - 2025-12-03
+
+### Fixed
+- Fixed size attribute being ignored for image hosted components.
+
 ## [v2.29.0] - 2025-11-24
 
 ### Added 
@@ -32,8 +37,6 @@ Inquiry.fromTemplate(templateId)
 ### Changed
 - The check animation at the end of the capture in old selfie flows now respects the color that is sent from the server. Note that this means it will no longer be green by default and will instead use your primary icon stroke color defined on your theme.
 - Changed cancel modal to stack buttons vertically to allow more space to fit longer localized strings.
-
-### Changed
 - Bumped the server API version.
 
 ### Fixed
