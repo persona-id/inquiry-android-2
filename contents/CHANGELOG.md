@@ -7,6 +7,20 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## Unreleased
 
+## [v2.30.0] - 2025-12-16
+
+### Changed
+- Dynamically register NFC broadcast receiver only when NFC scanning screen is visible.
+
+### Fixed
+- Fixed a crash when the NFC scanner screen is open when the app is killed and restored.
+- Fixed a bug where the NFC scanner will not submit the correct NFC data if the scanner screen is killed and restored.
+- Fixed a bug where sometimes multiple NFC scanner screens can be shown.
+- Add workaround for devices with bad camera sensor data with certain resolutions.
+
+### Removed
+- **Breaking Change** Removed `InquiryBuilder.themeSetId`. This method was erroneously added, it can only be passed on inquiry creation and thus only valid on `InquiryTemplateBuilder`.
+
 ## [v2.29.1] - 2025-12-03
 
 ### Fixed
