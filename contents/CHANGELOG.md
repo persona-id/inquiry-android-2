@@ -7,6 +7,12 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## Unreleased
 
+## [v2.30.0] - 2026-01-08
+
+### Fixed
+- Fixed a bug where spacers will not work in horizontal stacks.
+- Fixed a bug with 3rd party digital ID integrations.
+
 ## [v2.30.0] - 2025-12-16
 
 ### Changed
