@@ -7,7 +7,12 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## Unreleased
 
-## [v2.30.0] - 2026-01-08
+## [v2.30.2] - 2026-01-08
+
+### Fixed
+- Fixed a bug where manual capture will not work in the redesigned Selfie flow.
+
+## [v2.30.1] - 2026-01-08
 
 ### Fixed
 - Fixed a bug where spacers will not work in horizontal stacks.
