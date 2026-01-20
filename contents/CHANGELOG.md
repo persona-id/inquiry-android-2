@@ -7,6 +7,11 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## Unreleased
 
+## [v2.30.3] - 2026-01-20
+
+### Fixed
+- Fixed a bug where the capture method recorded is sometimes incorrect for Government ID steps.
+
 ## [v2.30.2] - 2026-01-08
 
 ### Fixed
