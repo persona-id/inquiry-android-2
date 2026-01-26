@@ -7,6 +7,12 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## Unreleased
 
+## [v2.30.4] - 2026-01-26
+
+### Fixed
+- Fixed a crash when the width or height of a hosted image is set to "auto".
+- Fixed a bug where sometimes a transition happens twice when it should only happen once.
+
 ## [v2.30.3] - 2026-01-20
 
 ### Fixed
