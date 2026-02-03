@@ -7,6 +7,14 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## Unreleased
 
+## [v2.31.0] - 2026-02-02
+
+### Changed
+- Bumped up kotlin version to 2.1.21
+- Bumped up ksp version to 2.1.21-2.0.2
+- Removed kotlinx-datetime dependency
+- Updated `inquiry-advanced-customizations-impl` to match latest UI specs.
+
 ## [v2.30.4] - 2026-01-26
 
 ### Fixed
