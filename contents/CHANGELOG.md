@@ -7,6 +7,18 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## Unreleased
 
+## [v2.32.0] - 2026-02-09
+
+### Added
+
+- Added `.styleVariant(StyleVariant?)` to `InquiryBuilder` and `InquiryTemplateBuilder` to override automatic handling of light/dark mode. Use `StyleVariant.LIGHT` or `StyleVariant.DARK`.
+
+### Changed
+- Updated `inquiry-advanced-customizations-impl` to match latest UI specs.
+
+### Fixed
+- Fixed a bug where auto-capture stops working when activity is killed and recreated.
+
 ## [v2.31.0] - 2026-02-02
 
 ### Changed
