@@ -7,6 +7,12 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## Unreleased
 
+## [v2.32.1] - 2026-02-17
+
+### Fixed
+
+- Fixed an issue with selfie redesign when activity is killed and restarted.
+
 ## [v2.32.0] - 2026-02-09
 
 ### Added
