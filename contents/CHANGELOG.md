@@ -7,16 +7,27 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## Unreleased
 
+## [v2.32.2] - 2026-02-24
+
+### Added
+- Added support for automatic torch enablement during video flows.
+
+### Changed
+- Updated `inquiry-advanced-customizations-impl` gov ID hint and success pill styling to match selfie redesign.
+ 
+### Fixed
+- Fixed NFC scanning issues seen on few other passports.
+- Fixed a crash when launching an inquiry as a dynamic feature module.
+- Fixed a bug where integrity checks do not run in certain circumstances.
+
 ## [v2.32.1] - 2026-02-17
 
 ### Fixed
-
 - Fixed an issue with selfie redesign when activity is killed and restarted.
 
 ## [v2.32.0] - 2026-02-09
 
 ### Added
-
 - Added `.styleVariant(StyleVariant?)` to `InquiryBuilder` and `InquiryTemplateBuilder` to override automatic handling of light/dark mode. Use `StyleVariant.LIGHT` or `StyleVariant.DARK`.
 
 ### Changed
