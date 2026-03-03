@@ -7,6 +7,12 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## Unreleased
 
+## [v2.32.3] - 2026-03-03
+
+### Fixed
+- Fixed a bug where some features were not being enabled when they should be if an inquiry is launched by a one time link or an inquiry token with a session token.
+- Fixed a bug where some configuration options are not picked up if an inquiry is launched via an inquiry token and a session token.
+
 ## [v2.32.2] - 2026-02-24
 
 ### Added
