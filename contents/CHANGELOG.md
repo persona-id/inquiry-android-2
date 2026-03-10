@@ -7,6 +7,16 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## Unreleased
 
+## [v2.33.0] - 2026-03-09
+
+### Added
+- Added support for enabling watermark text overlay for selfie and gov-id flows
+- Added support for icon styles for government ID step's ID selector.
+
+### Fixed
+- Fixed a crash when processing camera image buffers.
+- Fixed a bug where we retry endlessly on 409 errors.
+
 ## [v2.32.3] - 2026-03-03
 
 ### Fixed
