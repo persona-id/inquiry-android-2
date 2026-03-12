@@ -7,6 +7,16 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## Unreleased
 
+## [v2.33.1] - 2026-03-11
+
+### Changed
+- Increase the number of attempts to connect with the camera to improve camera compatibility across devices.
+
+### Fixed
+- Fixed a bug where some inquiry settings are not applied when an inquiry is launched via session token.
+- Fixed a bug where a valid selfie camera could not be found even if one exists.
+- Fixed a bug where the government ID step would not try to recover from a recoverable error when video capture is enabled.
+
 ## [v2.33.0] - 2026-03-09
 
 ### Added
