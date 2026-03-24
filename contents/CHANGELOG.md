@@ -7,6 +7,19 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## Unreleased
 
+## [v2.34.0] - 2026-03-24
+
+### Added
+- Added `failure_default_icon` as a local image asset.
+- Added support for video recording when auto-classification is enabled for Government ID flow
+- Added support for NFC tips button on the main screen instead of the navigation bar.
+
+### Fixed
+- Fixed a rare crash that can occur when the cancel dialog is shown.
+- Fixed a bug where the button for the NFC tips bottom sheet may not appear.
+- Fixed a bug where the NFC component will not auto-transition to the next step if the component is nested with another component.
+- Fixed a bug where the help button was always visible in inline mode.
+
 ## [v2.33.1] - 2026-03-11
 
 ### Changed
