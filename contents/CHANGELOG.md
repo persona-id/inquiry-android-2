@@ -7,6 +7,11 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## Unreleased
 
+## [v2.35.1] - 2026-03-27
+
+### Fixed
+- Fixed an issue where requests to Google Wallet will fail.
+
 ## [v2.35.0] - 2026-03-27
 
 ### Added
