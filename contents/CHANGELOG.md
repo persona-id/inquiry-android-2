@@ -7,6 +7,14 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## Unreleased
 
+## [v2.35.0] - 2026-03-27
+
+### Added
+- Added `ACCESS_NETWORK_STATE` and `READ_BASIC_PHONE_STATE` permissions to the SDK manifest.
+
+### Fixed
+- Fixed a visual bug where the intensity indicator on the selfie step was wrong.
+
 ## [v2.34.0] - 2026-03-24
 
 ### Added
