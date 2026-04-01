@@ -7,6 +7,11 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## Unreleased
 
+## [v2.35.3] - 2026-04-01
+
+### Fixed
+- Fixed a bug where bottom sheets sometimes do not fully expand.
+
 ## [v2.35.2] - 2026-03-30
 
 ### Fixed
