@@ -7,6 +7,13 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## Unreleased
 
+## [v2.36.0] - 2026-04-03
+
+### Changed
+- Disallow "force dark theme" on the default Inquiry theme to prevent possible contrast issues.
+- Updated the default fill color for a few icons to reflect currently branding. This only affects icons that are not overwritten with colors from a theme template.
+- Radio buttons now use the text highlight color if available. They will continue to fall back to the default text color otherwise.  
+
 ## [v2.35.4] - 2026-04-01
 
 This is a technical release of v2.35.3.
