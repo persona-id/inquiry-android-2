@@ -7,6 +7,12 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## Unreleased
 
+## [v2.37.0] - 2026-04-07
+
+### Added
+- Added support for changing the background color of the country selector on phone number inputs.
+- Added file too large error message for document step.
+
 ## [v2.36.0] - 2026-04-03
 
 ### Changed
