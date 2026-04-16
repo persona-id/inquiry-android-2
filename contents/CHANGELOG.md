@@ -7,6 +7,24 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## Unreleased
 
+## [v2.38.0] - 2026-04-16
+
+### Added
+- Added `assets/` folder lookup for locally bundled Lottie animations. The SDK now checks `assets/` (with original casing) between `res/raw/` and the network URL fallback.
+- Show a red box over certain UI elements when they are focused to improve accessibility. This should only impact keyboard users.
+- SDK is now available on Maven Central, including snapshot versions during pre-release.
+  ```gradle
+  repositories {
+      mavenCentral()
+  }
+  dependencies {
+      implementation("com.withpersona.sdk2:inquiry:<version>")
+  }
+  ```
+
+### Fixed
+- Fixed various accessibility bugs.
+
 ## [v2.37.0] - 2026-04-07
 
 ### Added
