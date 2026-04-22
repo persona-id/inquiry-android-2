@@ -7,6 +7,11 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## Unreleased
 
+## [v2.39.0] - 2026-04-21
+
+### Fixed
+- Fixed a bug where the capture button in the selfie/government ID step did not become disabled once tapped.
+
 ## [v2.38.0] - 2026-04-16
 
 ### Added
