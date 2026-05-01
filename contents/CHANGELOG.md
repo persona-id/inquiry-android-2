@@ -7,6 +7,24 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## Unreleased
 
+## [v2.40.0] - 2026-04-30
+
+### Added
+- Added support for link buttons.
+- Added optional `shareToken` parameter on `Inquiry.fromTemplate(...)`, `Inquiry.fromTemplateVersion(...)`, `Inquiry.fromInquiry(...)`, and `Inquiry.fromOneTimeLinkCode(...)` builders to support [redeeming share tokens via the inquiry client](https://docs.withpersona.com/redeeming-share-tokens#redeeming-share-tokens-via-inquiry-client-side).
+- Added `government_id_nfc_scan_front_opened` and `government_id_nfc_scan_back_opened` as local image assets.
+
+### Fixed
+- Fixed NFC reading getting stuck during ID/Passport scan.
+- Fixed client/server desync during government id autoclassification.
+
+### Changed
+- Style redesigned selfie screens based on SST (server sided theming)
+- Updated government ID NFC lottie animations.
+- Updated the Persona branding logo shown in the inquiry footer to the current brand wordmark.
+- Updated the selfie step instructions and processing animations.
+- **Breaking change** The processing animation used in the Selfie step has been changed from `raw/pi2_id_scan_loading` to `raw/pi2_selfie_processing`. If you were overriding this resource locally you will need to add a new resource named `pi2_selfie_processing` to the raw resource folder.
+
 ## [v2.39.0] - 2026-04-21
 
 ### Fixed
