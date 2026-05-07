@@ -7,6 +7,17 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## Unreleased
 
+## [v2.41.0] - 2026-05-06
+
+### Added
+- Added support for phone number silent network authentication during government ID and selfie flows.
+
+### Changed
+- Updated the inquiry footer background and Persona logo colors to match the latest brand specs in light and dark modes.
+
+### Fixed
+- Reduced UI flickering in certain edge cases.
+
 ## [v2.40.0] - 2026-04-30
 
 ### Added
