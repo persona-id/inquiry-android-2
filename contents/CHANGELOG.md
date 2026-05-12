@@ -7,6 +7,12 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## Unreleased
 
+## [v2.41.1] - 2026-05-12
+
+### Fixed
+- Fixed a rare crash that can occur when Inquiries are launched inline and the app is backgrounded.
+- Fixed NFC Chip Authentication failing on several French Identification documents.
+
 ## [v2.41.0] - 2026-05-06
 
 ### Added
