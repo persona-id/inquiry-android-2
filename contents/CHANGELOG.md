@@ -7,11 +7,25 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## Unreleased
 
+## [v2.42.0] - 2026-05-19
+
+### Added
+- Added File Upload Component in UI Step
+
+### Changed
+- Updated the selfie instructions animation so the preview matches the pose sequence the user is about to perform.
+
+### Fixed
+- Limit the number of retries to 3 when a network error occurs to prevent flow from getting stuck.
+- Fixed NFC scanning sheet styling issues.
+- Fixed a few rare crashes that can occur when scanning an NFC chip.
+
 ## [v2.41.1] - 2026-05-12
 
 ### Fixed
 - Fixed a rare crash that can occur when Inquiries are launched inline and the app is backgrounded.
 - Fixed NFC Chip Authentication failing on several French Identification documents.
+- Fixed a rare crash when pressing the Android system back button during an inline Inquiry.
 
 ## [v2.41.0] - 2026-05-06
 
