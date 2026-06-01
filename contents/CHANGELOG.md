@@ -7,6 +7,15 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## Unreleased
 
+## [v2.43.0] - 2026-06-01
+
+### Added
+- Added support for configuring account auto-creation when triggering sentinel events.
+
+### Fixed
+- Fixed UI not respecting the locale override.
+- Fixed NFC scan failing on passports that don't support Chip Authentication.
+
 ## [v2.42.0] - 2026-05-19
 
 ### Added
