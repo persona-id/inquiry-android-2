@@ -7,6 +7,19 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## Unreleased
 
+## [v2.44.0] - 2026-06-08
+
+### Fixed
+- Fixed a rare crash that can occur when a selected file for upload does not exist.
+
+### Added
+- Added scroll awareness
+- Inquiry templates can now configure how many NFC scan attempts are required before allowing the user to fallback to an alternative. 
+- Added support for a configurable disclaimer message on the Selfie step's capture screen.
+
+### Changed
+- NFC troubleshooting tips now appear when the user cancels the NFC scan. 
+
 ## [v2.43.0] - 2026-06-01
 
 ### Added
@@ -15,6 +28,8 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 ### Fixed
 - Fixed UI not respecting the locale override.
 - Fixed NFC scan failing on passports that don't support Chip Authentication.
+- Remove hairline gap between screens when transitioning between step types.
+- Fixed an issue where the camera feed will not load on selfie steps on certain devices.
 
 ## [v2.42.0] - 2026-05-19
 
