@@ -7,6 +7,15 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## Unreleased
 
+## [v2.45.0] - 2026-06-16
+
+### Added
+- When redeeming a Share Token, you can now provide optional field mappings via the `fieldMappings` builder method to populate inquiry fields from reused data whose field names differ. Fields with matching names continue to be filled automatically, so you only need to map the ones that differ.
+- Phone number inputs now honor the "disable country code selection" setting. When enabled, the country code is shown but can no longer be changed by the user.
+
+### Fixed
+- Fixed a bug where files to be uploaded were prematurely deleted.
+
 ## [v2.44.0] - 2026-06-08
 
 ### Fixed
