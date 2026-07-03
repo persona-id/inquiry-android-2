@@ -7,6 +7,11 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## Unreleased
 
+## [v2.46.1] - 2026-07-02
+
+### Fixed
+- Fixed an issue with namespace conflicts with the library `io.noties.markwon`.
+
 ## [v2.46.0] - 2026-07-02
 
 ### Added
