@@ -7,37 +7,16 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## Unreleased
 
-## [v2.46.1] - 2026-07-02
-
-### Fixed
-- Fixed an issue with namespace conflicts with the library `io.noties.markwon`.
-
-## [v2.46.0] - 2026-07-02
-
-### Added
-- Added support for setting page padding via SST (server sided theming).
-- Added support for titles in the navigation bar.
-- Added support for scanning Japanese My Number Cards, driver's licenses, and residence cards over NFC. To enable, add the `com.withpersona.sdk2:jp-my-number-impl` dependency to your app.
+## [v2.45.1] - 2026-07-06
 
 ### Changed
-- Bumped up AGP version to 9.0.1
-- Bumped up Dagger version to 2.59.2
-- Bumped up Kotlin version to 2.2.10
-- Bumped up ksp version to 2.2.10-2.0.2
-- Government ID and Selfie steps will now error instead of take the user back to the instructions screen when errors occur in some edge cases.
-- The redirect URL configured for an inquiry is now opened when the inquiry is canceled, matching the existing behavior on completion.
-- Changed the page name for the review screen from "check-upload" to "check" to be consistent with the government ID step.
-
-### Fixed
-- Fixed a bug where closing the keyboard can trigger back press when targeting Android API level 36 or higher.
-- Fixed a bug where the wrong colors were being applied to the selfie step pending animation.
+- Shade the `commonmark` library.
 
 ## [v2.45.0] - 2026-06-16
 
 ### Added
 - When redeeming a Share Token, you can now provide optional field mappings via the `fieldMappings` builder method to populate inquiry fields from reused data whose field names differ. Fields with matching names continue to be filled automatically, so you only need to map the ones that differ.
 - Phone number inputs now honor the "disable country code selection" setting. When enabled, the country code is shown but can no longer be changed by the user.
-- Added a `host(PersonaHost)` option to `InquiryBuilder` and `InquiryTemplateBuilder`. Set `PersonaHost.FedRamp` to route an inquiry to Persona's FedRAMP environment. Defaults to `PersonaHost.Default`.
 
 ### Fixed
 - Fixed a bug where files to be uploaded were prematurely deleted.
