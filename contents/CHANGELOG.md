@@ -7,10 +7,24 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## Unreleased
 
+## [v2.48.0] - 2026-07-14
+
+### Changed
+- Bumped minimum SDK version to 23.
+
+### Fixed
+- Fixed potential class conflicts for apps that also depend on the `json-logic-kmp` library.
+- Fixed a rare crash that can occur on camera screens due to a race condition.
+- Fixed a bug where the upload button's icon on government ID steps is invisible in dark themes.
+
 ## [v2.47.0] - 2026-07-07
 
 ### Added
 - Added `Inquiry.fromRelaySessionToken(...)` for starting an Inquiry from a [Persona Relay](https://docs.withpersona.com/relay) session access token. In this mode the SDK omits information that identifies the host app, such as the app's package name.
+
+### Fixed
+- Fixed NFC Chip Authentication scanning error on some Japanese passports.
+- Fixed a bug where the screen transition is sometimes delayed.
 
 ## [v2.46.1] - 2026-07-02
 
@@ -23,6 +37,7 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 - Added support for setting page padding via SST (server sided theming).
 - Added support for titles in the navigation bar.
 - Added support for scanning Japanese My Number Cards, driver's licenses, and residence cards over NFC. To enable, add the `com.withpersona.sdk2:jp-my-number-impl` dependency to your app.
+- Added support for variable custom fonts uploaded to an inquiry template, so a single font file can back multiple weights.
 
 ### Changed
 - Bumped up AGP version to 9.0.1
@@ -32,6 +47,8 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 - Government ID and Selfie steps will now error instead of take the user back to the instructions screen when errors occur in some edge cases.
 - The redirect URL configured for an inquiry is now opened when the inquiry is canceled, matching the existing behavior on completion.
 - Changed the page name for the review screen from "check-upload" to "check" to be consistent with the government ID step.
+- Text configured with a thin, extra-light, semi-bold, extra-bold, or extra-black font weight now renders at that weight, instead of falling back to the regular weight.
+- Text configured with the heavy font weight now renders slightly heavier.
 
 ### Fixed
 - Fixed a bug where closing the keyboard can trigger back press when targeting Android API level 36 or higher.
