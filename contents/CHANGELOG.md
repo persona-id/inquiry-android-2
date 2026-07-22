@@ -7,12 +7,21 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## Unreleased
 
+## [v2.48.1] - 2026-07-22
+
+### Fixed
+- Fixed an issue where text on the selfie processing screen ignored the alignment attribute.
+- Fixed an issue where the holographic torch feature did not work when auto-classification and video capture are enabled on the government ID step.
+- Fixed an issue where the user can be taken to the instructions screen when the screen should be skipped when video capture is enabled on the government ID step.
+- Fixed an issue where bottom margins were not being applied on UI steps in certain cases.
+
 ## [v2.48.0] - 2026-07-14
 
 ### Changed
 - Bumped minimum SDK version to 23.
 
 ### Fixed
+- Fixed issue where Japanese NFC scanning dialog overlaps system UI.
 - Fixed potential class conflicts for apps that also depend on the `json-logic-kmp` library.
 - Fixed a rare crash that can occur on camera screens due to a race condition.
 - Fixed a bug where the upload button's icon on government ID steps is invisible in dark themes.
