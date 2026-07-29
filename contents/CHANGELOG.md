@@ -7,68 +7,26 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## Unreleased
 
-## [v2.48.1] - 2026-07-22
+## [v2.45.2] - 2026-07-28
+
+### Added
+- The country selector now displays a flag image next to each option and next to the selected value, when provided by the server.
 
 ### Fixed
-- Fixed an issue where text on the selfie processing screen ignored the alignment attribute.
+- Fixed an issue where bottom margins were not being applied on UI steps in certain cases.
 - Fixed an issue where the holographic torch feature did not work when auto-classification and video capture are enabled on the government ID step.
 - Fixed an issue where the user can be taken to the instructions screen when the screen should be skipped when video capture is enabled on the government ID step.
-- Fixed an issue where bottom margins were not being applied on UI steps in certain cases.
 
-## [v2.48.0] - 2026-07-14
-
-### Changed
-- Bumped minimum SDK version to 23.
-
-### Fixed
-- Fixed issue where Japanese NFC scanning dialog overlaps system UI.
-- Fixed potential class conflicts for apps that also depend on the `json-logic-kmp` library.
-- Fixed a rare crash that can occur on camera screens due to a race condition.
-- Fixed a bug where the upload button's icon on government ID steps is invisible in dark themes.
-
-## [v2.47.0] - 2026-07-07
-
-### Added
-- Added `Inquiry.fromRelaySessionToken(...)` for starting an Inquiry from a [Persona Relay](https://docs.withpersona.com/relay) session access token. In this mode the SDK omits information that identifies the host app, such as the app's package name.
-
-### Fixed
-- Fixed NFC Chip Authentication scanning error on some Japanese passports.
-- Fixed a bug where the screen transition is sometimes delayed.
-
-## [v2.46.1] - 2026-07-02
-
-### Fixed
-- Fixed an issue with namespace conflicts with the library `io.noties.markwon`.
-
-## [v2.46.0] - 2026-07-02
-
-### Added
-- Added support for setting page padding via SST (server sided theming).
-- Added support for titles in the navigation bar.
-- Added support for scanning Japanese My Number Cards, driver's licenses, and residence cards over NFC. To enable, add the `com.withpersona.sdk2:jp-my-number-impl` dependency to your app.
-- Added support for variable custom fonts uploaded to an inquiry template, so a single font file can back multiple weights.
+## [v2.45.1] - 2026-07-06
 
 ### Changed
-- Bumped up AGP version to 9.0.1
-- Bumped up Dagger version to 2.59.2
-- Bumped up Kotlin version to 2.2.10
-- Bumped up ksp version to 2.2.10-2.0.2
-- Government ID and Selfie steps will now error instead of take the user back to the instructions screen when errors occur in some edge cases.
-- The redirect URL configured for an inquiry is now opened when the inquiry is canceled, matching the existing behavior on completion.
-- Changed the page name for the review screen from "check-upload" to "check" to be consistent with the government ID step.
-- Text configured with a thin, extra-light, semi-bold, extra-bold, or extra-black font weight now renders at that weight, instead of falling back to the regular weight.
-- Text configured with the heavy font weight now renders slightly heavier.
-
-### Fixed
-- Fixed a bug where closing the keyboard can trigger back press when targeting Android API level 36 or higher.
-- Fixed a bug where the wrong colors were being applied to the selfie step pending animation.
+- Shade the `commonmark` library.
 
 ## [v2.45.0] - 2026-06-16
 
 ### Added
 - When redeeming a Share Token, you can now provide optional field mappings via the `fieldMappings` builder method to populate inquiry fields from reused data whose field names differ. Fields with matching names continue to be filled automatically, so you only need to map the ones that differ.
 - Phone number inputs now honor the "disable country code selection" setting. When enabled, the country code is shown but can no longer be changed by the user.
-- Added a `host(PersonaHost)` option to `InquiryBuilder` and `InquiryTemplateBuilder`. Set `PersonaHost.FedRamp` to route an inquiry to Persona's FedRAMP environment. Defaults to `PersonaHost.Default`.
 
 ### Fixed
 - Fixed a bug where files to be uploaded were prematurely deleted.
