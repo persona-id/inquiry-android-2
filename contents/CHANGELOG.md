@@ -7,10 +7,30 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## Unreleased
 
+## [v2.50.0] - 2026-08-11
+
+### Added
+- Added video capture support on a wider range of devices.
+- Added `InquiryEvent.MiscInquiryEvent`, an experimental group of inquiry events that report SDK activity most integrations don't need to react to.
+- The processing screen shown while a Government ID, Selfie, or Document step uploads can now be replaced by any UI step.
+- Added support for setting the justification on container components in UI steps.
+
+### Changed
+- The Government ID capture screen now shows a passport-specific instruction when capturing a passport.
+- Masked text input fields on UI steps now show a numeric keyboard when every character in the field's mask is a digit placeholder or a literal.
+
+### Fixed
+- The cancel confirmation dialog now applies the title, text, and background color styles configured for modals, so its text alignment, size, and color can be customized separately from the step it is shown over.
+- Handle some edge cases where tapping the manual capture button repeatedly can cause an error.
+- Fixed an issue where tapping "Settings" on the permission dialog on selfie steps will cause the inquiry to end with a no permission error in certain edge cases.
+
 ## [v2.49.0] - 2026-07-29
 
 ### Added
 - The country selector now displays a flag image next to each option and next to the selected value, when provided by the server.
+
+### Changed
+- Japanese My Number NFC scans no longer require scanning a card for sandbox inquiries.
 
 ## [v2.48.1] - 2026-07-22
 
