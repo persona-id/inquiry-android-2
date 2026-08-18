@@ -7,9 +7,15 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## Unreleased
 
+## [v2.50.1] - 2026-08-17
+
+### Fixed
+- Fixed an issue where the Government ID camera preview stayed black after leaving and returning to the app during capture.
+
 ## [v2.50.0] - 2026-08-11
 
 ### Added
+- Added support for displaying a configurable description below the title on the Government ID capture screen.
 - Added video capture support on a wider range of devices.
 - Added `InquiryEvent.MiscInquiryEvent`, an experimental group of inquiry events that report SDK activity most integrations don't need to react to.
 - The processing screen shown while a Government ID, Selfie, or Document step uploads can now be replaced by any UI step.
