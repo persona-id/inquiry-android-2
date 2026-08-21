@@ -7,6 +7,19 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## Unreleased
 
+## [v2.51.0] - 2026-08-20
+
+### Added
+- The SDK now reports whether the device is on an active phone call when an inquiry starts, to help detect phishing attempts.
+
+### Changed
+- Inquiry steps that open in a browser now use Chrome when it is installed, and the device's default browser otherwise.
+
+### Fixed
+- Added retry attempts on the NFC step when the connection to the chip is dropped.
+- Fixed an issue where video capture doesn't work on certain devices.
+- Fixed an issue where HTML encoded characters can cause a crash.
+
 ## [v2.50.1] - 2026-08-17
 
 ### Fixed
