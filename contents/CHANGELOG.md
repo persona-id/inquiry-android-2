@@ -7,6 +7,17 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## Unreleased
 
+## [v2.52.0] - 2026-08-25
+
+### Added
+- Selfie capture now reports whether the screen flash fired when the photo was taken, to help improve capture quality in low light.
+
+### Changed
+- Updated the architecture of the SDK under the hood. No noticeable differences are expected. 
+
+### Fixed
+- Fixed an issue where the user could get stuck on the Government ID capture screen when automatic ID classification failed while video capture was enabled.
+
 ## [v2.51.0] - 2026-08-20
 
 ### Added
