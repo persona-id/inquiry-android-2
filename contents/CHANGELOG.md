@@ -7,6 +7,14 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## Unreleased
 
+## [v2.52.1] - 2026-08-26
+
+### Added
+- Screens can now include a copy-to-clipboard button. Tapping it copies a value configured in the flow — such as a code or reference number — to the device clipboard and shows a confirmation message.
+
+### Fixed
+- Fixed UI animation issue during government ID step.
+
 ## [v2.52.0] - 2026-08-25
 
 ### Added
