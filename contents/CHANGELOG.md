@@ -7,6 +7,18 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## Unreleased
 
+## [v2.53.0] - 2026-09-03
+
+### Added
+- Added support for chunked video upload.
+
+### Fixed
+- Fixed a bug where the values entered on form steps were missing from the collected data returned on inquiry completion.
+- Fixed a rare crash that can occur when there are issues initializing the camera.
+- Fixed an issue where the Privacy Policy component could remain visible even when configured to be hidden.
+- Fixed a crash that could occur during the NFC step when the document was moved away from the device and placed back mid-scan.
+- Fixed a bug where passport NFC fails when the system locale is set to Arabic.
+
 ## [v2.52.1] - 2026-08-26
 
 ### Added
@@ -14,6 +26,7 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ### Fixed
 - Fixed UI animation issue during government ID step.
+- Fixed an issue where upload-only Government ID steps opened the camera instead of offering file upload.
 
 ## [v2.52.0] - 2026-08-25
 
