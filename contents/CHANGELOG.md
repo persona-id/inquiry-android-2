@@ -7,6 +7,13 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## Unreleased
 
+### Added
+- Checkboxes and radio buttons in inquiry flows can now be configured to display their control on the trailing side of the option label.
+
+### Fixed
+- Fixed a rare bug where the bottom sheet selector will appear blank.
+- Fixed a crash on few misconfigured Lottie animations.
+
 ## [v2.53.0] - 2026-09-03
 
 ### Added
@@ -23,6 +30,7 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ### Added
 - Screens can now include a copy-to-clipboard button. Tapping it copies a value configured in the flow — such as a code or reference number — to the device clipboard and shows a confirmation message.
+- Added an experimental event, `InquiryEvent.MiscInquiryEvent.SlowInquiryStart`. This event is logged if the inquiry takes an unusually long amount of time to load.
 
 ### Fixed
 - Fixed UI animation issue during government ID step.
