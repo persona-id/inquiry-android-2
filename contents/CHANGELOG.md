@@ -7,6 +7,8 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## Unreleased
 
+## [v2.54.0] - 2026-09-08
+
 ### Added
 - Checkboxes and radio buttons in inquiry flows can now be configured to display their control on the trailing side of the option label.
 
