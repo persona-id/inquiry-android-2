@@ -7,6 +7,14 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## Unreleased
 
+## [v2.55.0] - 2026-09-14
+
+### Added
+- Verification now shows a warning when a possible phishing attempt is detected, such as the flow being opened on a different device or network than the one it started on. The user can dismiss the warning and continue.
+
+### Fixed
+- Fix blank screen when video recording times out on government ID step.
+
 ## [v2.54.0] - 2026-09-08
 
 ### Added
