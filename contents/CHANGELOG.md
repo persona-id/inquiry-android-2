@@ -7,6 +7,16 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## Unreleased
 
+## [v2.56.0] - 2026-09-21
+
+### Changed
+- On Government ID steps, show the review capture screen if video capture is on and auto-classification is off.
+- Narrowed ProGuard rules to reduce SDK size.
+
+### Fixed
+- Fixed a rare crash that could occur when a camera became unavailable while starting a Selfie or Government ID step.
+- Fixed a bug where completed selfie captures could be discarded when the center pose was not the first pose in the flow.
+
 ## [v2.55.0] - 2026-09-14
 
 ### Added
