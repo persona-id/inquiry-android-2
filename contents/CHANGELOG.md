@@ -7,6 +7,11 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## Unreleased
 
+## [v2.57.0] - 2026-09-28
+
+### Fixed
+- Fixed a rare video recording error where the video codec can throw an exception.
+
 ## [v2.56.0] - 2026-09-21
 
 ### Changed
