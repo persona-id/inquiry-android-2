@@ -7,6 +7,18 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## Unreleased
 
+## [v2.58.0] - 2026-10-01
+
+### Added
+- Improve accuracy of selfie detection when video capture is on.
+
+### Changed
+- Bumped up version of PocketSign libraries used for Japanese NFC scanning to 2.2.1.
+- Bumped up Dagger version to 2.60.1.
+
+### Fixed
+- Fixed minor bugs in the Sentinel SDK.
+
 ## [v2.57.0] - 2026-09-28
 
 ### Fixed
