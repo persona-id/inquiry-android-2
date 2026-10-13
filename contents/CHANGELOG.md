@@ -7,7 +7,16 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## Unreleased
 
-## [v2.59.1] - 2026-10-08 ![SDK 23+](https://img.shields.io/badge/-SDK%2023%2B-blue)
+## [v2.60.0] - 2026-10-13 ![SDK 23+](https://img.shields.io/badge/-SDK%2023%2B-blue)
+
+### Added
+- Added support for localization overrides on government ID step's processing screen.
+- Added per-page transitions to the selfie step.
+
+### Changed
+- **Breaking change** Updated `IntegerField` to be backed by a `Long`.
+- **Breaking change** Updated `FloatField` to be backed by a `Double`.
+- Support chunked video uploading for a wider variety of devices.
 
 ### Fixed
 - Fixed a crash that could end the host app when starting a file upload on devices that have no file picker available.
