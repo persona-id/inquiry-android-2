@@ -7,48 +7,17 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## Unreleased
 
-## [v2.60.0] - 2026-10-13 ![SDK 23+](https://img.shields.io/badge/-SDK%2023%2B-blue)
-
-### Added
-- Added support for localization overrides on government ID step's processing screen.
-- Added per-page transitions to the selfie step.
-
-### Changed
-- **Breaking change** Updated `IntegerField` to be backed by a `Long`.
-- **Breaking change** Updated `FloatField` to be backed by a `Double`.
-- Support chunked video uploading for a wider variety of devices.
+## [v2.57.1] - 2026-10-14
 
 ### Fixed
-- Fixed a crash that could end the host app when starting a file upload on devices that have no file picker available.
+- Fixed a bug where PDF files uploaded in the Government ID step were sent without their contents.
 
-## [v2.59.0] - 2026-10-05 ![SDK 23+](https://img.shields.io/badge/-SDK%2023%2B-blue)
-
-### Changed
-- **Breaking change** `SentinelEvent.trigger(...)` now returns the created transaction's ID and status in `Sentinel.TriggerResult`, and `triggerAsync(...)` can deliver that result through a callback. Update code that references `Sentinel.TriggerResult` as a singleton to use the result instance returned by `trigger(...)` or supplied to the `triggerAsync(...)` callback instead.
-
-### Fixed
-- Fixed a crash that could end the host app when it was sent to the background during a Government ID step.
-- Fixed a bug where the international DB field does not prefill if there is only one option.
-- Fixed a potential issue where the video is scrambled when local video recording is performed.
-
-## [v2.58.0] - 2026-10-01 ![SDK 23+](https://img.shields.io/badge/-SDK%2023%2B-blue)
-
-### Added
-- Improve accuracy of selfie detection when video capture is on.
-
-### Changed
-- Bumped up version of PocketSign libraries used for Japanese NFC scanning to 2.2.1.
-- Bumped up Dagger version to 2.60.1.
-
-### Fixed
-- Fixed minor bugs in the Sentinel SDK.
-
-## [v2.57.0] - 2026-09-28 ![SDK 23+](https://img.shields.io/badge/-SDK%2023%2B-blue)
+## [v2.57.0] - 2026-09-28
 
 ### Fixed
 - Fixed a rare video recording error where the video codec can throw an exception.
 
-## [v2.56.0] - 2026-09-21 ![SDK 23+](https://img.shields.io/badge/-SDK%2023%2B-blue)
+## [v2.56.0] - 2026-09-21
 
 ### Changed
 - On Government ID steps, show the review capture screen if video capture is on and auto-classification is off.
@@ -58,7 +27,7 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 - Fixed a rare crash that could occur when a camera became unavailable while starting a Selfie or Government ID step.
 - Fixed a bug where completed selfie captures could be discarded when the center pose was not the first pose in the flow.
 
-## [v2.55.0] - 2026-09-14 ![SDK 23+](https://img.shields.io/badge/-SDK%2023%2B-blue)
+## [v2.55.0] - 2026-09-14
 
 ### Added
 - Verification now shows a warning when a possible phishing attempt is detected, such as the flow being opened on a different device or network than the one it started on. The user can dismiss the warning and continue.
@@ -66,7 +35,7 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 ### Fixed
 - Fix blank screen when video recording times out on government ID step.
 
-## [v2.54.0] - 2026-09-08 ![SDK 23+](https://img.shields.io/badge/-SDK%2023%2B-blue)
+## [v2.54.0] - 2026-09-08
 
 ### Added
 - Checkboxes and radio buttons in inquiry flows can now be configured to display their control on the trailing side of the option label.
@@ -75,7 +44,7 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 - Fixed a rare bug where the bottom sheet selector will appear blank.
 - Fixed a crash on few misconfigured Lottie animations.
 
-## [v2.53.0] - 2026-09-03 ![SDK 23+](https://img.shields.io/badge/-SDK%2023%2B-blue)
+## [v2.53.0] - 2026-09-03
 
 ### Added
 - Added support for chunked video upload.
@@ -87,7 +56,7 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 - Fixed a crash that could occur during the NFC step when the document was moved away from the device and placed back mid-scan.
 - Fixed a bug where passport NFC fails when the system locale is set to Arabic.
 
-## [v2.52.1] - 2026-08-26 ![SDK 23+](https://img.shields.io/badge/-SDK%2023%2B-blue)
+## [v2.52.1] - 2026-08-26
 
 ### Added
 - Screens can now include a copy-to-clipboard button. Tapping it copies a value configured in the flow — such as a code or reference number — to the device clipboard and shows a confirmation message.
@@ -97,7 +66,7 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 - Fixed UI animation issue during government ID step.
 - Fixed an issue where upload-only Government ID steps opened the camera instead of offering file upload.
 
-## [v2.52.0] - 2026-08-25 ![SDK 23+](https://img.shields.io/badge/-SDK%2023%2B-blue)
+## [v2.52.0] - 2026-08-25
 
 ### Added
 - Selfie capture now reports whether the screen flash fired when the photo was taken, to help improve capture quality in low light.
@@ -108,7 +77,7 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 ### Fixed
 - Fixed an issue where the user could get stuck on the Government ID capture screen when automatic ID classification failed while video capture was enabled.
 
-## [v2.51.0] - 2026-08-20 ![SDK 23+](https://img.shields.io/badge/-SDK%2023%2B-blue)
+## [v2.51.0] - 2026-08-20
 
 ### Added
 - The SDK now reports whether the device is on an active phone call when an inquiry starts, to help detect phishing attempts.
@@ -121,12 +90,12 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 - Fixed an issue where video capture doesn't work on certain devices.
 - Fixed an issue where HTML encoded characters can cause a crash.
 
-## [v2.50.1] - 2026-08-17 ![SDK 23+](https://img.shields.io/badge/-SDK%2023%2B-blue)
+## [v2.50.1] - 2026-08-17
 
 ### Fixed
 - Fixed an issue where the Government ID camera preview stayed black after leaving and returning to the app during capture.
 
-## [v2.50.0] - 2026-08-11 ![SDK 23+](https://img.shields.io/badge/-SDK%2023%2B-blue)
+## [v2.50.0] - 2026-08-11
 
 ### Added
 - Added support for displaying a configurable description below the title on the Government ID capture screen.
@@ -144,7 +113,7 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 - Handle some edge cases where tapping the manual capture button repeatedly can cause an error.
 - Fixed an issue where tapping "Settings" on the permission dialog on selfie steps will cause the inquiry to end with a no permission error in certain edge cases.
 
-## [v2.49.0] - 2026-07-29 ![SDK 23+](https://img.shields.io/badge/-SDK%2023%2B-blue)
+## [v2.49.0] - 2026-07-29
 
 ### Added
 - The country selector now displays a flag image next to each option and next to the selected value, when provided by the server.
@@ -152,7 +121,7 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 ### Changed
 - Japanese My Number NFC scans no longer require scanning a card for sandbox inquiries.
 
-## [v2.48.1] - 2026-07-22 ![SDK 23+](https://img.shields.io/badge/-SDK%2023%2B-blue)
+## [v2.48.1] - 2026-07-22
 
 ### Fixed
 - Fixed an issue where text on the selfie processing screen ignored the alignment attribute.
@@ -160,7 +129,7 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 - Fixed an issue where the user can be taken to the instructions screen when the screen should be skipped when video capture is enabled on the government ID step.
 - Fixed an issue where bottom margins were not being applied on UI steps in certain cases.
 
-## [v2.48.0] - 2026-07-14 ![SDK 23+](https://img.shields.io/badge/-SDK%2023%2B-blue)
+## [v2.48.0] - 2026-07-14
 
 ### Changed
 - Bumped minimum SDK version to 23.
@@ -171,7 +140,7 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 - Fixed a rare crash that can occur on camera screens due to a race condition.
 - Fixed a bug where the upload button's icon on government ID steps is invisible in dark themes.
 
-## [v2.47.0] - 2026-07-07 ![SDK 21+](https://img.shields.io/badge/-SDK%2021%2B-blue)
+## [v2.47.0] - 2026-07-07
 
 ### Added
 - Added `Inquiry.fromRelaySessionToken(...)` for starting an Inquiry from a [Persona Relay](https://docs.withpersona.com/relay) session access token. In this mode the SDK omits information that identifies the host app, such as the app's package name.
@@ -180,12 +149,12 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 - Fixed NFC Chip Authentication scanning error on some Japanese passports.
 - Fixed a bug where the screen transition is sometimes delayed.
 
-## [v2.46.1] - 2026-07-02 ![SDK 21+](https://img.shields.io/badge/-SDK%2021%2B-blue)
+## [v2.46.1] - 2026-07-02
 
 ### Fixed
 - Fixed an issue with namespace conflicts with the library `io.noties.markwon`.
 
-## [v2.46.0] - 2026-07-02 ![SDK 21+](https://img.shields.io/badge/-SDK%2021%2B-blue)
+## [v2.46.0] - 2026-07-02
 
 ### Added
 - Added support for setting page padding via SST (server sided theming).
@@ -208,7 +177,7 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 - Fixed a bug where closing the keyboard can trigger back press when targeting Android API level 36 or higher.
 - Fixed a bug where the wrong colors were being applied to the selfie step pending animation.
 
-## [v2.45.0] - 2026-06-16 ![SDK 21+](https://img.shields.io/badge/-SDK%2021%2B-blue)
+## [v2.45.0] - 2026-06-16
 
 ### Added
 - When redeeming a Share Token, you can now provide optional field mappings via the `fieldMappings` builder method to populate inquiry fields from reused data whose field names differ. Fields with matching names continue to be filled automatically, so you only need to map the ones that differ.
@@ -218,7 +187,7 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 ### Fixed
 - Fixed a bug where files to be uploaded were prematurely deleted.
 
-## [v2.44.0] - 2026-06-08 ![SDK 21+](https://img.shields.io/badge/-SDK%2021%2B-blue)
+## [v2.44.0] - 2026-06-08
 
 ### Fixed
 - Fixed a rare crash that can occur when a selected file for upload does not exist.
@@ -231,7 +200,7 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 ### Changed
 - NFC troubleshooting tips now appear when the user cancels the NFC scan. 
 
-## [v2.43.0] - 2026-06-01 ![SDK 21+](https://img.shields.io/badge/-SDK%2021%2B-blue)
+## [v2.43.0] - 2026-06-01
 
 ### Added
 - Added support for configuring account auto-creation when triggering sentinel events.
@@ -242,7 +211,7 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 - Remove hairline gap between screens when transitioning between step types.
 - Fixed an issue where the camera feed will not load on selfie steps on certain devices.
 
-## [v2.42.0] - 2026-05-19 ![SDK 21+](https://img.shields.io/badge/-SDK%2021%2B-blue)
+## [v2.42.0] - 2026-05-19
 
 ### Added
 - Added File Upload Component in UI Step
@@ -255,14 +224,14 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 - Fixed NFC scanning sheet styling issues.
 - Fixed a few rare crashes that can occur when scanning an NFC chip.
 
-## [v2.41.1] - 2026-05-12 ![SDK 21+](https://img.shields.io/badge/-SDK%2021%2B-blue)
+## [v2.41.1] - 2026-05-12
 
 ### Fixed
 - Fixed a rare crash that can occur when Inquiries are launched inline and the app is backgrounded.
 - Fixed NFC Chip Authentication failing on several French Identification documents.
 - Fixed a rare crash when pressing the Android system back button during an inline Inquiry.
 
-## [v2.41.0] - 2026-05-06 ![SDK 21+](https://img.shields.io/badge/-SDK%2021%2B-blue)
+## [v2.41.0] - 2026-05-06
 
 ### Added
 - Added support for phone number silent network authentication during government ID and selfie flows.
@@ -273,7 +242,7 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 ### Fixed
 - Reduced UI flickering in certain edge cases.
 
-## [v2.40.0] - 2026-04-30 ![SDK 21+](https://img.shields.io/badge/-SDK%2021%2B-blue)
+## [v2.40.0] - 2026-04-30
 
 ### Added
 - Added support for link buttons.
@@ -291,12 +260,12 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 - Updated the selfie step instructions and processing animations.
 - **Breaking change** The processing animation used in the Selfie step has been changed from `raw/pi2_id_scan_loading` to `raw/pi2_selfie_processing`. If you were overriding this resource locally you will need to add a new resource named `pi2_selfie_processing` to the raw resource folder.
 
-## [v2.39.0] - 2026-04-21 ![SDK 21+](https://img.shields.io/badge/-SDK%2021%2B-blue)
+## [v2.39.0] - 2026-04-21
 
 ### Fixed
 - Fixed a bug where the capture button in the selfie/government ID step did not become disabled once tapped.
 
-## [v2.38.0] - 2026-04-16 ![SDK 21+](https://img.shields.io/badge/-SDK%2021%2B-blue)
+## [v2.38.0] - 2026-04-16
 
 ### Added
 - Added `assets/` folder lookup for locally bundled Lottie animations. The SDK now checks `assets/` (with original casing) between `res/raw/` and the network URL fallback.
@@ -314,39 +283,39 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 ### Fixed
 - Fixed various accessibility bugs.
 
-## [v2.37.0] - 2026-04-07 ![SDK 21+](https://img.shields.io/badge/-SDK%2021%2B-blue)
+## [v2.37.0] - 2026-04-07
 
 ### Added
 - Added support for changing the background color of the country selector on phone number inputs.
 - Added file too large error message for document step.
 
-## [v2.36.0] - 2026-04-03 ![SDK 21+](https://img.shields.io/badge/-SDK%2021%2B-blue)
+## [v2.36.0] - 2026-04-03
 
 ### Changed
 - Disallow "force dark theme" on the default Inquiry theme to prevent possible contrast issues.
 - Updated the default fill color for a few icons to reflect currently branding. This only affects icons that are not overwritten with colors from a theme template.
 - Radio buttons now use the text highlight color if available. They will continue to fall back to the default text color otherwise.  
 
-## [v2.35.4] - 2026-04-01 ![SDK 21+](https://img.shields.io/badge/-SDK%2021%2B-blue)
+## [v2.35.4] - 2026-04-01
 
 This is a technical release of v2.35.3.
 
-## [v2.35.3] - 2026-04-01 ![SDK 21+](https://img.shields.io/badge/-SDK%2021%2B-blue)
+## [v2.35.3] - 2026-04-01
 
 ### Fixed
 - Fixed a bug where bottom sheets sometimes do not fully expand.
 
-## [v2.35.2] - 2026-03-30 ![SDK 21+](https://img.shields.io/badge/-SDK%2021%2B-blue)
+## [v2.35.2] - 2026-03-30
 
 ### Fixed
 - Minor internal bug fixes.
 
-## [v2.35.1] - 2026-03-27 ![SDK 21+](https://img.shields.io/badge/-SDK%2021%2B-blue)
+## [v2.35.1] - 2026-03-27
 
 ### Fixed
 - Fixed an issue where requests to Google Wallet will fail.
 
-## [v2.35.0] - 2026-03-27 ![SDK 21+](https://img.shields.io/badge/-SDK%2021%2B-blue)
+## [v2.35.0] - 2026-03-27
 
 ### Added
 - Added `ACCESS_NETWORK_STATE` and `READ_BASIC_PHONE_STATE` permissions to the SDK manifest.
@@ -354,7 +323,7 @@ This is a technical release of v2.35.3.
 ### Fixed
 - Fixed a visual bug where the intensity indicator on the selfie step was wrong.
 
-## [v2.34.0] - 2026-03-24 ![SDK 21+](https://img.shields.io/badge/-SDK%2021%2B-blue)
+## [v2.34.0] - 2026-03-24
 
 ### Added
 - Added `failure_default_icon` as a local image asset.
@@ -367,7 +336,7 @@ This is a technical release of v2.35.3.
 - Fixed a bug where the NFC component will not auto-transition to the next step if the component is nested with another component.
 - Fixed a bug where the help button was always visible in inline mode.
 
-## [v2.33.1] - 2026-03-11 ![SDK 21+](https://img.shields.io/badge/-SDK%2021%2B-blue)
+## [v2.33.1] - 2026-03-11
 
 ### Changed
 - Increase the number of attempts to connect with the camera to improve camera compatibility across devices.
@@ -377,7 +346,7 @@ This is a technical release of v2.35.3.
 - Fixed a bug where a valid selfie camera could not be found even if one exists.
 - Fixed a bug where the government ID step would not try to recover from a recoverable error when video capture is enabled.
 
-## [v2.33.0] - 2026-03-09 ![SDK 21+](https://img.shields.io/badge/-SDK%2021%2B-blue)
+## [v2.33.0] - 2026-03-09
 
 ### Added
 - Added support for enabling watermark text overlay for selfie and gov-id flows
@@ -387,13 +356,13 @@ This is a technical release of v2.35.3.
 - Fixed a crash when processing camera image buffers.
 - Fixed a bug where we retry endlessly on 409 errors.
 
-## [v2.32.3] - 2026-03-03 ![SDK 21+](https://img.shields.io/badge/-SDK%2021%2B-blue)
+## [v2.32.3] - 2026-03-03
 
 ### Fixed
 - Fixed a bug where some features were not being enabled when they should be if an inquiry is launched by a one time link or an inquiry token with a session token.
 - Fixed a bug where some configuration options are not picked up if an inquiry is launched via an inquiry token and a session token.
 
-## [v2.32.2] - 2026-02-24 ![SDK 21+](https://img.shields.io/badge/-SDK%2021%2B-blue)
+## [v2.32.2] - 2026-02-24
 
 ### Added
 - Added support for automatic torch enablement during video flows.
@@ -406,12 +375,12 @@ This is a technical release of v2.35.3.
 - Fixed a crash when launching an inquiry as a dynamic feature module.
 - Fixed a bug where integrity checks do not run in certain circumstances.
 
-## [v2.32.1] - 2026-02-17 ![SDK 21+](https://img.shields.io/badge/-SDK%2021%2B-blue)
+## [v2.32.1] - 2026-02-17
 
 ### Fixed
 - Fixed an issue with selfie redesign when activity is killed and restarted.
 
-## [v2.32.0] - 2026-02-09 ![SDK 21+](https://img.shields.io/badge/-SDK%2021%2B-blue)
+## [v2.32.0] - 2026-02-09
 
 ### Added
 - Added `.styleVariant(StyleVariant?)` to `InquiryBuilder` and `InquiryTemplateBuilder` to override automatic handling of light/dark mode. Use `StyleVariant.LIGHT` or `StyleVariant.DARK`.
@@ -422,7 +391,7 @@ This is a technical release of v2.35.3.
 ### Fixed
 - Fixed a bug where auto-capture stops working when activity is killed and recreated.
 
-## [v2.31.0] - 2026-02-02 ![SDK 21+](https://img.shields.io/badge/-SDK%2021%2B-blue)
+## [v2.31.0] - 2026-02-02
 
 ### Changed
 - Bumped up kotlin version to 2.1.21
@@ -430,29 +399,29 @@ This is a technical release of v2.35.3.
 - Removed kotlinx-datetime dependency
 - Updated `inquiry-advanced-customizations-impl` to match latest UI specs.
 
-## [v2.30.4] - 2026-01-26 ![SDK 21+](https://img.shields.io/badge/-SDK%2021%2B-blue)
+## [v2.30.4] - 2026-01-26
 
 ### Fixed
 - Fixed a crash when the width or height of a hosted image is set to "auto".
 - Fixed a bug where sometimes a transition happens twice when it should only happen once.
 
-## [v2.30.3] - 2026-01-20 ![SDK 21+](https://img.shields.io/badge/-SDK%2021%2B-blue)
+## [v2.30.3] - 2026-01-20
 
 ### Fixed
 - Fixed a bug where the capture method recorded is sometimes incorrect for Government ID steps.
 
-## [v2.30.2] - 2026-01-08 ![SDK 21+](https://img.shields.io/badge/-SDK%2021%2B-blue)
+## [v2.30.2] - 2026-01-08
 
 ### Fixed
 - Fixed a bug where manual capture will not work in the redesigned Selfie flow.
 
-## [v2.30.1] - 2026-01-08 ![SDK 21+](https://img.shields.io/badge/-SDK%2021%2B-blue)
+## [v2.30.1] - 2026-01-08
 
 ### Fixed
 - Fixed a bug where spacers will not work in horizontal stacks.
 - Fixed a bug with 3rd party digital ID integrations.
 
-## [v2.30.0] - 2025-12-16 ![SDK 21+](https://img.shields.io/badge/-SDK%2021%2B-blue)
+## [v2.30.0] - 2025-12-16
 
 ### Changed
 - Dynamically register NFC broadcast receiver only when NFC scanning screen is visible.
@@ -466,12 +435,12 @@ This is a technical release of v2.35.3.
 ### Removed
 - **Breaking Change** Removed `InquiryBuilder.themeSetId`. This method was erroneously added, it can only be passed on inquiry creation and thus only valid on `InquiryTemplateBuilder`.
 
-## [v2.29.1] - 2025-12-03 ![SDK 21+](https://img.shields.io/badge/-SDK%2021%2B-blue)
+## [v2.29.1] - 2025-12-03
 
 ### Fixed
 - Fixed size attribute being ignored for image hosted components.
 
-## [v2.29.0] - 2025-11-24 ![SDK 21+](https://img.shields.io/badge/-SDK%2021%2B-blue)
+## [v2.29.0] - 2025-11-24
 
 ### Added 
 - Added support for an inquiry's `redirect_uri` which allows the sdk to redirect upon completion. You can set the redirect URI when creating an inquiry or in your inquiry template's configuration.
@@ -482,12 +451,12 @@ Inquiry.fromTemplate(templateId)
   .build()
 ```
 
-## [v2.28.0] - 2025-11-20 ![SDK 21+](https://img.shields.io/badge/-SDK%2021%2B-blue)
+## [v2.28.0] - 2025-11-20
 
 ### Added
 - Added support for advanced customizations.
 
-## [v2.27.0] - 2025-11-13 ![SDK 21+](https://img.shields.io/badge/-SDK%2021%2B-blue)
+## [v2.27.0] - 2025-11-13
 
 ### Added
 - Added troubleshooting tips to NFC step
@@ -503,7 +472,7 @@ Inquiry.fromTemplate(templateId)
 - Fixed a bug where GPS requirements are lost on step transition in certain cases.
 - Fixed a bug where the document step will misbehave if resumed when the file upload limit is 1.
 
-## [v2.26.0] - 2025-11-06 ![SDK 21+](https://img.shields.io/badge/-SDK%2021%2B-blue)
+## [v2.26.0] - 2025-11-06
 
 ### Added
 - Added support for Mdoc component with Google Wallet.
@@ -511,19 +480,19 @@ Inquiry.fromTemplate(templateId)
 ### Fixed
 - Fixed a crash during phone number silent network authentication.
 
-## [v2.25.5] - 2025-10-31 ![SDK 21+](https://img.shields.io/badge/-SDK%2021%2B-blue)
+## [v2.25.5] - 2025-10-31
 
 ### Fixed
 - Fixed NFC scanning sheet layout issue.
 - Fixed an issue where NFC scanning remained active even after an error dialog appeared.
 
-## [v2.25.4] - 2025-10-30 ![SDK 21+](https://img.shields.io/badge/-SDK%2021%2B-blue)
+## [v2.25.4] - 2025-10-30
 
 ### Fixed
 - Fixed checkbox styling issue
 - Fixed a rare crash on the government ID step if the user cancels the inquiry flow immediately after pressing submit.
 
-## [v2.25.3] - 2025-10-24 ![SDK 21+](https://img.shields.io/badge/-SDK%2021%2B-blue)
+## [v2.25.3] - 2025-10-24
 
 ### Added
 - Added an animation to the camera loading for government id captures. 
@@ -532,17 +501,17 @@ Inquiry.fromTemplate(templateId)
 - Fixed a bug where the webRTC connection would not fully shut down if the inquiry was cancelled while the capture screen was showing.
 - Fixed a back transition issue on the government id step when WebRTC is on.
 
-## [v2.25.2] - 2025-10-20 ![SDK 21+](https://img.shields.io/badge/-SDK%2021%2B-blue)
+## [v2.25.2] - 2025-10-20
 
 ### Added
 - Added support for a short capture tips blurb section below the government id capture feed.
 
-## [v2.25.1] - 2025-10-16 ![SDK 21+](https://img.shields.io/badge/-SDK%2021%2B-blue)
+## [v2.25.1] - 2025-10-16
 
 ### Fixed
 - Fixed memory leak after a selfie inquiry is finished. 
 
-## [v2.25.0] - 2025-10-10 ![SDK 21+](https://img.shields.io/badge/-SDK%2021%2B-blue)
+## [v2.25.0] - 2025-10-10
 
 ### Fixed
 - Fixed a visual bug where back captures of gov id images would appear to be slightly cutoff during end user review.
@@ -551,7 +520,7 @@ Inquiry.fromTemplate(templateId)
 - Added `sna-impl` module that supports Phone Number Silent Network Authentication verification.
 - Added support for credit card collection.
 
-## [v2.24.0] - 2025-09-26 ![SDK 21+](https://img.shields.io/badge/-SDK%2021%2B-blue)
+## [v2.24.0] - 2025-09-26
 
 ### Added
 - Added `onEventListener` to `Inquiry`.
@@ -563,7 +532,7 @@ Inquiry.fromTemplate(templateId)
 - Improved NFC UX
 - Bumped up the Lottie version from 4.2.2 to 6.6.7
 
-## [v2.23.0] - 2025-09-24 ![SDK 21+](https://img.shields.io/badge/-SDK%2021%2B-blue)
+## [v2.23.0] - 2025-09-24
 
 ### Added
 - Added support for the "address auto-complete method" attribute on address components.
@@ -571,18 +540,18 @@ Inquiry.fromTemplate(templateId)
 ### Fixed
 - Fixed a potential crash in the document step.
 
-## [v2.22.2] - 2025-09-16 ![SDK 21+](https://img.shields.io/badge/-SDK%2021%2B-blue)
+## [v2.22.2] - 2025-09-16
 
 ### Fixed
 - Fixed a bug where the wrong background color was sometimes applied on document steps while in dark mode.
 - Fixed a bug where the SDK does not send GPS information even if it's required by the template.
 
-## [v2.22.1] - 2025-09-08 ![SDK 21+](https://img.shields.io/badge/-SDK%2021%2B-blue)
+## [v2.22.1] - 2025-09-08
 
 ### Fixed
 - Changed the SDK to return a `SessionTokenError` instead of a generic `NetworkError` if a step transition fails due to an invalid session token. 
 
-## [v2.22.0] - 2025-09-03 ![SDK 21+](https://img.shields.io/badge/-SDK%2021%2B-blue)
+## [v2.22.0] - 2025-09-03
 
 ### Added 
 - Added Integration Step to support 3rd party integration flows.
@@ -603,7 +572,7 @@ Inquiry.fromTemplate(templateId)
 - Apply the correct background color to the government ID NFC modal and the error modal.
 - Fix a bug where the government ID NFC modal text can be cut off.
 
-## [v2.21.0] - 2025-07-30 ![SDK 21+](https://img.shields.io/badge/-SDK%2021%2B-blue)
+## [v2.21.0] - 2025-07-30
 
 ### Added
 - Added country picker to Phone Number Input component
@@ -616,7 +585,7 @@ Inquiry.fromTemplate(templateId)
 - Fix a bug where NFC would error on certain days of the month.
 - Fix a visual bug where errors are not cleared on the address component when they are resolved.
 
-## [v2.20.0] - 2025-07-03 ![SDK 21+](https://img.shields.io/badge/-SDK%2021%2B-blue)
+## [v2.20.0] - 2025-07-03
 
 ### Added
 - Added support for Selfie V1 design.
@@ -624,7 +593,7 @@ Inquiry.fromTemplate(templateId)
 ### Fixed
 - Fix a crash when upload fails on the government ID step.
 
-## [v2.19.0] - 2025-07-01 ![SDK 21+](https://img.shields.io/badge/-SDK%2021%2B-blue)
+## [v2.19.0] - 2025-07-01
 
 ### Added
 - Added support for 16kb page sizes.
@@ -635,12 +604,12 @@ Inquiry.fromTemplate(templateId)
 ### Fixed
 - Fix a crash that can occur after NFC is done scanning when SDK is used within a dynamic feature module.
 
-## [v2.18.1] - 2025-06-23 ![SDK 21+](https://img.shields.io/badge/-SDK%2021%2B-blue)
+## [v2.18.1] - 2025-06-23
 
 ### Fixed
 - Fixed malformed session token returned by InquiryEvent.StartEvent.
 
-## [v2.18.0] - 2025-06-20 ![SDK 21+](https://img.shields.io/badge/-SDK%2021%2B-blue)
+## [v2.18.0] - 2025-06-20
 
 ### Added
 - Added support for downloading and using custom fonts at runtime.
@@ -652,29 +621,29 @@ Inquiry.fromTemplate(templateId)
 - Fixed a bug where the wrong background color was being applied to focused elements in input select component dropdowns.
 - Ensure files created by SDK are deleted once the inquiry completes.
 
-## [v2.17.3] - 2025-06-06 ![SDK 21+](https://img.shields.io/badge/-SDK%2021%2B-blue)
+## [v2.17.3] - 2025-06-06
 
 ### Changed
 - No longer show the add document button if the file limit is reached in a document verification.
 
-## [v2.17.2] - 2025-05-23 ![SDK 21+](https://img.shields.io/badge/-SDK%2021%2B-blue)
+## [v2.17.2] - 2025-05-23
 
 ### Fixed
 - Fixed an issue where localization overrides are not applied correctly when auto-classification is on.
 - Fixed a crash in the document step when used within a react native project. 
 
-## [v2.17.1] - 2025-05-15 ![SDK 21+](https://img.shields.io/badge/-SDK%2021%2B-blue)
+## [v2.17.1] - 2025-05-15
 
 ### Fixed
 - We will now apply theme colors to the default document prompt screen page buttons and image.
 - Fixed a race condition where a document is not uploaded when there are two or more document steps in an inquiry flow.
 
-## [v2.17.0] - 2025-04-30 ![SDK 21+](https://img.shields.io/badge/-SDK%2021%2B-blue)
+## [v2.17.0] - 2025-04-30
 
 ### Changed
 - Optimized the Sentinel SDK size (~300kb after optimization) by changing module structures.
 
-## [v2.16.4] - 2025-04-29 ![SDK 21+](https://img.shields.io/badge/-SDK%2021%2B-blue)
+## [v2.16.4] - 2025-04-29
 
 ### Added
 - Added support for disabled and errored styles from the server for input select components.
@@ -682,7 +651,7 @@ Inquiry.fromTemplate(templateId)
 ### Changed
 - Modify how component field values are sent up when Reusable Personas is used.
 
-## [v2.16.3] - 2025-04-22 ![SDK 21+](https://img.shields.io/badge/-SDK%2021%2B-blue)
+## [v2.16.3] - 2025-04-22
 
 ### Changed
 - Send component field values of the current screen when Reusable Personas is used.
@@ -691,12 +660,12 @@ Inquiry.fromTemplate(templateId)
 - Fixed a bug where auto-capture sometimes would not work on a valid MRZ code.
 - Fixed a crash when launching an inquiry as a dynamic feature module.
 
-## [v2.16.2] - 2025-04-14 ![SDK 21+](https://img.shields.io/badge/-SDK%2021%2B-blue)
+## [v2.16.2] - 2025-04-14
 
 ### Fixed
 - Fixed a bug where `InlineInquiryScreen.goBack()` would crash if handleBackPress is set to false.
 
-## [v2.16.1] - 2025-04-11 ![SDK 21+](https://img.shields.io/badge/-SDK%2021%2B-blue)
+## [v2.16.1] - 2025-04-11
 
 ### Added
 - Added `.handleBackPress(_)` to `InlineInquiryBuilder` to control whether the inquiry screen should handle back presses when launched inline.
@@ -705,7 +674,7 @@ Inquiry.fromTemplate(templateId)
 - Fixed a crash in the document step if the depending project also depends on `kotlin-reflect`.
 - Fixed a rare crash on the government ID preview screen.
 
-## [v2.16.0] - 2025-04-09 ![SDK 21+](https://img.shields.io/badge/-SDK%2021%2B-blue)
+## [v2.16.0] - 2025-04-09
 
 ### Added
 - Added `.accountReferenceId(_)` method to `SentinelEvent.Builder` for Sentinel SDK. Use this to link a sentinel transaction to an account.
@@ -717,17 +686,17 @@ Inquiry.fromTemplate(templateId)
 ### Fixed
 - Fixed a race condition in the document step that can lead to a crash in rare cases.
 
-## [v2.15.3] - 2025-04-02 ![SDK 21+](https://img.shields.io/badge/-SDK%2021%2B-blue)
+## [v2.15.3] - 2025-04-02
 
 ### Fixed
 - Fixed a bug where transitions fail when using a one-time-link code.
 
-## [v2.15.2] - 2025-04-01 ![SDK 21+](https://img.shields.io/badge/-SDK%2021%2B-blue)
+## [v2.15.2] - 2025-04-01
 
 ### Fixed
 - Fixed an issue where the guide image on the government ID capture screen would shrink over time.
 
-## [v2.15.1] - 2025-03-31 ![SDK 21+](https://img.shields.io/badge/-SDK%2021%2B-blue)
+## [v2.15.1] - 2025-03-31
 
 ### Changed
 - Updated some dependencies to their latest patch version to resolve some bugs.
@@ -735,7 +704,7 @@ Inquiry.fromTemplate(templateId)
 ### Fixed
 - Fixed an issue where chevrons would not render in government id type select components on UI steps.
 
-## [v2.15.0] - 2025-03-18 ![SDK 21+](https://img.shields.io/badge/-SDK%2021%2B-blue)
+## [v2.15.0] - 2025-03-18
 
 ### Changed
 - `RoutingCountry` enum, and `InquiryTemplateBuilder.routingCountry(string)`, `InquiryBuilder.routingCountry(string)` methods marked as deprecated. These will be fully removed as a breaking change in a coming release, please remove usage now to avoid compilation issues in future.
@@ -744,19 +713,19 @@ Inquiry.fromTemplate(templateId)
 ### Fixed
 - Fixed a bug where UI elements are disabled during background polling when they should not be.
 
-## [v2.14.2] - 2025-03-13 ![SDK 21+](https://img.shields.io/badge/-SDK%2021%2B-blue)
+## [v2.14.2] - 2025-03-13
 
 ### Changed
 
 - Networking optimizations.
 
-## [v2.14.1] - 2025-03-11 ![SDK 21+](https://img.shields.io/badge/-SDK%2021%2B-blue)
+## [v2.14.1] - 2025-03-11
 
 ### Added
 - Added support for vertical alignment on processing screens.
 - Added support for auto submit on UI step button components.
 
-## [v2.14.0] - 2025-03-10 ![SDK 21+](https://img.shields.io/badge/-SDK%2021%2B-blue)
+## [v2.14.0] - 2025-03-10
 
 ### Changed
 - Updated the SDK to be compatible for use within an on-demand dynamic feature module.
@@ -764,7 +733,7 @@ Inquiry.fromTemplate(templateId)
 ### Fixed
 - Fixed a rare crash when uploading files in the government ID step.
 
-## [v2.13.4] - 2025-02-25 ![SDK 21+](https://img.shields.io/badge/-SDK%2021%2B-blue)
+## [v2.13.4] - 2025-02-25
 
 ### Changed
 - Update dependencies.
@@ -774,12 +743,12 @@ Inquiry.fromTemplate(templateId)
 ### Fixed
 - Fixed a rare crash that can occur at the end of an inquiry.
 
-## [v2.13.3] - 2025-02-21 ![SDK 21+](https://img.shields.io/badge/-SDK%2021%2B-blue)
+## [v2.13.3] - 2025-02-21
 
 ### Added
 - Added support in the Sentinel SDK for Java applications.
 
-## [v2.13.2] - 2025-02-20 ![SDK 21+](https://img.shields.io/badge/-SDK%2021%2B-blue)
+## [v2.13.2] - 2025-02-20
 
 ### Changed
 - Changed government ID auto-classification's manual classification fallback screen to automatically select the country/ID type if there is only one option.
@@ -787,12 +756,12 @@ Inquiry.fromTemplate(templateId)
 ### Fixed
 - Fixed a bug where checkbox text were not correctly aligned with the checkbox.
 
-## [v2.13.1] - 2025-02-11 ![SDK 21+](https://img.shields.io/badge/-SDK%2021%2B-blue)
+## [v2.13.1] - 2025-02-11
 
 ### Fixed
 - Fixed a crash that occurred on the final steps of inquiries that are "complete" steps rather than "ui" steps.
 
-## [v2.13.0] - 2025-02-03 ![SDK 21+](https://img.shields.io/badge/-SDK%2021%2B-blue)
+## [v2.13.0] - 2025-02-03
 
 ### Added
 - Added the ability for the server to instruct the client to use fallback mode automatically. To use this, either pass in FallbackMode.defer to the .fallbackMode function on the InquiryTemplate builder, or pass in a valid fallback inquiry id (starts with `iqfs`) and a valid fallback session token (using the .sessionToken function) on the Inquiry builder.
@@ -800,7 +769,7 @@ Inquiry.fromTemplate(templateId)
 ### Changed
 - Improve page transition performance for UI steps.
 
-## [v2.12.17] - 2024-12-19 ![SDK 21+](https://img.shields.io/badge/-SDK%2021%2B-blue)
+## [v2.12.17] - 2024-12-19
 
 ### Added
 - Added support for selfie previews.
@@ -810,17 +779,17 @@ Inquiry.fromTemplate(templateId)
 ### Fixed
 - Fixed a minor issue with the Sentinel SDK.
 
-## [v2.12.16] - 2024-12-17 ![SDK 21+](https://img.shields.io/badge/-SDK%2021%2B-blue)
+## [v2.12.16] - 2024-12-17
 
 ### Added
 - Published the Sentinel SDK.
 
-## [v2.12.15] - 2024-12-05 ![SDK 21+](https://img.shields.io/badge/-SDK%2021%2B-blue)
+## [v2.12.15] - 2024-12-05
 
 ### Fixed
 - Fixed a rare issue where the document file select picker might launch multiple times.
 
-## [v2.12.14] - 2024-11-27 ![SDK 21+](https://img.shields.io/badge/-SDK%2021%2B-blue)
+## [v2.12.14] - 2024-11-27
 
 ### Changed
 - Updated the layout for the government ID capture screen to handle smaller screens better.
@@ -831,12 +800,12 @@ Inquiry.fromTemplate(templateId)
 - Fixed a bug where a custom font cannot be found.
 - Fixed a bug where applying a theme when launching an inquiry in inline mode will change the theme of the host activity's context.
 
-## [v2.12.13] - 2024-11-25 ![SDK 21+](https://img.shields.io/badge/-SDK%2021%2B-blue)
+## [v2.12.13] - 2024-11-25
 
 ### Fixed
 - Fixed a bug where changes to an input select component does not trigger a render update.
 
-## [v2.12.12] - 2024-11-15 ![SDK 21+](https://img.shields.io/badge/-SDK%2021%2B-blue)
+## [v2.12.12] - 2024-11-15
 
 ### Changed
 - Inquiries launched inline will apply the given theme (if any) to the inquiry fragment.
@@ -845,7 +814,7 @@ Inquiry.fromTemplate(templateId)
 ### Fixed
 - Fixed an rare/improbable crash in the selfie step.
 
-## [v2.12.11] - 2024-10-25 ![SDK 21+](https://img.shields.io/badge/-SDK%2021%2B-blue)
+## [v2.12.11] - 2024-10-25
 
 ### Added
 - Added an option to use simulated government ID NFC data in sandbox mode to make testing in sandbox
@@ -866,46 +835,46 @@ Inquiry.fromTemplate(templateId)
 - Fixed a bug where UI steps with government ID NFC will not auto-submit if the submit button is
   nested within a component group.
 
-## [v2.12.10] - 2024-09-30 ![SDK 21+](https://img.shields.io/badge/-SDK%2021%2B-blue)
+## [v2.12.10] - 2024-09-30
 
 ### Fixed
 - Fixed a bug where the camera preview on the selfie step will not load on certain devices.
 
-## [v2.12.9] - 2024-09-27 ![SDK 21+](https://img.shields.io/badge/-SDK%2021%2B-blue)
+## [v2.12.9] - 2024-09-27
 
 ### Fixed
 - Fixed a class name collision issue when the Inquiry SDK is used with other 3rd party libraries.
 
-## [v2.12.8] - 2024-09-13 ![SDK 21+](https://img.shields.io/badge/-SDK%2021%2B-blue)
+## [v2.12.8] - 2024-09-13
 
 ### Added
 - Added support for header icons specified by the server on the government ID select screen.
 
-## [v2.12.7] - 2024-09-09 ![SDK 21+](https://img.shields.io/badge/-SDK%2021%2B-blue)
+## [v2.12.7] - 2024-09-09
 
 ### Added
 - Added support for field types Choices and MultiChoices.
 - Added an error dialog when using government ID NFC but the device does not have a NFC reader.
 
-## [v2.12.6] - 2024-09-04 ![SDK 21+](https://img.shields.io/badge/-SDK%2021%2B-blue)
+## [v2.12.6] - 2024-09-04
 
 ### Fixed
 - Fixed a bug where the initial spinner will not spin when using certain versions of Lottie.
 
-## [v2.12.5] - 2024-08-29 ![SDK 21+](https://img.shields.io/badge/-SDK%2021%2B-blue)
+## [v2.12.5] - 2024-08-29
 
 ### Added
 - Added support for collecting GPS data
 - Added event logs when inquiry is launched inline.
 
-## [v2.12.4] - 2024-08-22 ![SDK 21+](https://img.shields.io/badge/-SDK%2021%2B-blue)
+## [v2.12.4] - 2024-08-22
 
 ### Fixed
 - Fixed a bug where the create reusable Persona sheet would stick around after it dismisses.
 - Fixed a rare crash that can occur on UI step screens if the app is killed and restored.
 - Fixed a bug where the government ID NFC hint text is cut off in certain cases.
 
-## [v2.12.3] - 2024-08-06 ![SDK 21+](https://img.shields.io/badge/-SDK%2021%2B-blue)
+## [v2.12.3] - 2024-08-06
 
 ### Added
 - Added options to the inline inquiry builder to toggle whether inline inquiries can control the system UI.
@@ -919,7 +888,7 @@ Inquiry.fromTemplate(templateId)
 - Support markdown on texts for permissions related dialogs.
 - Fixed a crash that can occur if an inquiry flow errors while the app is in the background.
 
-## [v2.12.2] - 2024-07-19 ![SDK 21+](https://img.shields.io/badge/-SDK%2021%2B-blue)
+## [v2.12.2] - 2024-07-19
 
 ### Added
 - Added support for launching inquiries inline (i.e. within a fragment).
@@ -928,11 +897,11 @@ Inquiry.fromTemplate(templateId)
 - Fixed an issue with rendering document icon.
 - Fixed an issue where the permission dialog overlaps with system UI.
 
-## [v2.12.1] - 2024-07-18 ![SDK 21+](https://img.shields.io/badge/-SDK%2021%2B-blue)
+## [v2.12.1] - 2024-07-18
 
 This is a technical release of v2.12.0.
 
-## [v2.12.0] - 2024-07-01 ![SDK 21+](https://img.shields.io/badge/-SDK%2021%2B-blue)
+## [v2.12.0] - 2024-07-01
 
 ### Added
 - Added support for Card Access Number authentication for NFC scanning.
@@ -947,7 +916,7 @@ This is a technical release of v2.12.0.
 - Fixed an issue where stroke/fill color overrides were not correctly applied to certain illustrations used in the government ID step.
 - Fixed an issue where the review capture image flickers.
 
-## [v2.11.6] - 2024-04-29 ![SDK 21+](https://img.shields.io/badge/-SDK%2021%2B-blue)
+## [v2.11.6] - 2024-04-29
 
 ### Fixed
 - Fixed an issue where custom hint assets from the server on pdf417 scans on the government id capture page were not being applied.
@@ -956,17 +925,17 @@ This is a technical release of v2.12.0.
 ### Changed
 - Changed the scan NFC card button to show a progress indicator when transitioning to the next step.
 
-## [v2.11.5] - 2024-04-15 ![SDK 21+](https://img.shields.io/badge/-SDK%2021%2B-blue)
+## [v2.11.5] - 2024-04-15
 
 ### Added
 - Updated internal fallback mode API
 
-## [v2.11.4] - 2024-04-11 ![SDK 21+](https://img.shields.io/badge/-SDK%2021%2B-blue)
+## [v2.11.4] - 2024-04-11
 
 ### Fixed
 - Make sure the header button color from the server is applied on gov id review screens.
 
-## [v2.11.3] - 2024-04-09 ![SDK 21+](https://img.shields.io/badge/-SDK%2021%2B-blue)
+## [v2.11.3] - 2024-04-09
 
 ### Added
 - Added the ability to color the back and cancel buttons on the capture screens via the server.
@@ -977,12 +946,12 @@ This is a technical release of v2.12.0.
 ### Fixed
 - Fixed several NFC related bugs.
 
-## [v2.11.2] - 2024-04-05 ![SDK 21+](https://img.shields.io/badge/-SDK%2021%2B-blue)
+## [v2.11.2] - 2024-04-05
 
 ### Added
 - Added ability to configure via the server which data groups are read during an nfc scan.
 
-## [v2.11.1] - 2024-04-02 ![SDK 21+](https://img.shields.io/badge/-SDK%2021%2B-blue)
+## [v2.11.1] - 2024-04-02
 
 ### Added
 - Added the ability to set custom assets via the server for the verification processing animation.
@@ -993,13 +962,13 @@ This is a technical release of v2.12.0.
 ### Changed
 - Changes the style of the processing screen when auto-classification is enabled.
 
-## [v2.11.0] - 2024-03-27 ![SDK 21+](https://img.shields.io/badge/-SDK%2021%2B-blue)
+## [v2.11.0] - 2024-03-27
 
 ### Added
 - Added a selfie flow type `configurable_poses` which randomizes the capturing order of selfie poses.
 - Added support for auto-classification for government ID steps.
 
-## [v2.10.19] - 2024-03-15 ![SDK 21+](https://img.shields.io/badge/-SDK%2021%2B-blue)
+## [v2.10.19] - 2024-03-15
 
 ### Added
 - Added a stricter condition for autocapture when strict selfie flag is on
@@ -1007,27 +976,27 @@ This is a technical release of v2.12.0.
 ### Fixed
 - Fixed a layout bug on the selfie start page where vertical margins were not being applied to text views.
 
-## [v2.10.18] - 2024-03-06 ![SDK 21+](https://img.shields.io/badge/-SDK%2021%2B-blue)
+## [v2.10.18] - 2024-03-06
 
 ### Fixed
 - Fixed an issue where the camera preview for government ID would be cropped if the sweep animation is disabled.
 
-## [v2.10.17] - 2024-03-05 ![SDK 21+](https://img.shields.io/badge/-SDK%2021%2B-blue)
+## [v2.10.17] - 2024-03-05
 
 ### Fixed
 - Addressed an issue with our beta fallback service.
 
-## [v2.10.16] - 2024-03-04 ![SDK 21+](https://img.shields.io/badge/-SDK%2021%2B-blue)
+## [v2.10.16] - 2024-03-04
 
 ### Added
 - Added a way to forcibly cancel all running inquiries within an application by calling `Inquiry.cancelRunningInquiries()`.
 
-## [v2.10.15] - 2024-02-28 ![SDK 21+](https://img.shields.io/badge/-SDK%2021%2B-blue)
+## [v2.10.15] - 2024-02-28
 
 ### Fixed
 - Fixed an issue where the buttons in the review capture screen for government ID steps are in the wrong location.
 
-## [v2.10.14] - 2024-02-27 ![SDK 21+](https://img.shields.io/badge/-SDK%2021%2B-blue)
+## [v2.10.14] - 2024-02-27
 
 ### Added
 - Added a toggle to have the SDK consume any unhandled exceptions via `consumeExceptions()` on `InquiryTemplateBuilder` or `InquiryBuilder`.
@@ -1035,7 +1004,7 @@ This is a technical release of v2.12.0.
 ### Fixed
 - Fixed an issue where using reusable Personas to complete parts of the inquiry does not work.
 
-## [v2.10.13] - 2024-02-20 ![SDK 21+](https://img.shields.io/badge/-SDK%2021%2B-blue)
+## [v2.10.13] - 2024-02-20
 
 ### Fixed
 - Fixed a bug with disabled button styles not being applied during page loads.
@@ -1044,13 +1013,13 @@ This is a technical release of v2.12.0.
 - Fixed an issue where the capture tips modal sometimes appears behind the navigation bar.
 - Fixed a crash that can occur in the government ID or selfie step if the cancel modal is shown and the app is backgrounded.
 
-## [v2.10.12] - 2024-01-23 ![SDK 21+](https://img.shields.io/badge/-SDK%2021%2B-blue)
+## [v2.10.12] - 2024-01-23
 
 ### Added
 - Added support for the auto-complete flag for reusable Personas.
 - Added a new graphic for the passport NFC flow.
 
-## [v2.10.11] - 2024-01-10 ![SDK 21+](https://img.shields.io/badge/-SDK%2021%2B-blue)
+## [v2.10.11] - 2024-01-10
 
 ### Added
 - Added highlighted background color for selected item in input select list component.
@@ -1067,7 +1036,7 @@ This is a technical release of v2.12.0.
 - Fixed an issue with the navigation bar color on Android API levels 27 to 29 (inclusive).
 - Fixed an issue in Government ID step where tapping back from the capture screen would cause minor UI issues.
 
-## [v2.10.10] - 2023-12-15 ![SDK 21+](https://img.shields.io/badge/-SDK%2021%2B-blue)
+## [v2.10.10] - 2023-12-15
 
 ### Added
 - Added checkbox group component, which has multi-select feature.
@@ -1079,7 +1048,7 @@ This is a technical release of v2.12.0.
 - Fixed some minor cosmetic issues with bottom sheets.
 - Introduced a workaround for a bug introduced in Lottie 6.2.0 that was causing a crash on the government id capture screen.
 
-## [v2.10.9] - 2023-11-27 ![SDK 21+](https://img.shields.io/badge/-SDK%2021%2B-blue)
+## [v2.10.9] - 2023-11-27
 
 ### Added
 - Added the ability to stream government id and selfie verifications via WebRTC.
@@ -1095,12 +1064,12 @@ This is a technical release of v2.12.0.
 - Improve performance and load times of UI steps, especially on lower end devices.
 - Prefixed some resources with "pi2" to avoid naming collisions.
 
-## [v2.10.8] - 2023-11-02 ![SDK 21+](https://img.shields.io/badge/-SDK%2021%2B-blue)
+## [v2.10.8] - 2023-11-02
 
 ### Fixed
 - Fixed a crash when using a custom government ID camera preview overlay.
 
-## [v2.10.7] - 2023-10-27 ![SDK 21+](https://img.shields.io/badge/-SDK%2021%2B-blue)
+## [v2.10.7] - 2023-10-27
 
 ### Fixed
 - Fixed an issue where video capture would not be able to find a suitable camera even if one is available.
@@ -1108,7 +1077,7 @@ This is a technical release of v2.12.0.
 - Fixed an issue where the address component would not expand.
 - Fixed an edge case where the manual capture button will not show up when it should.
 
-## [v2.10.6] - 2023-10-23 ![SDK 21+](https://img.shields.io/badge/-SDK%2021%2B-blue)
+## [v2.10.6] - 2023-10-23
 
 ### Added
 - Added the component text area, that will resize automatically when there is multiple lines of text
@@ -1119,12 +1088,12 @@ This is a technical release of v2.12.0.
 ### Changed
 - Display content edge-to-edge.
 
-## [v2.10.5] - 2023-10-05 ![SDK 21+](https://img.shields.io/badge/-SDK%2021%2B-blue)
+## [v2.10.5] - 2023-10-05
 
 ### Fixed
 - Workaround an issue with MLKit when used as a dynamic feature module.
 
-## [v2.10.4] - 2023-10-05 ![SDK 21+](https://img.shields.io/badge/-SDK%2021%2B-blue)
+## [v2.10.4] - 2023-10-05
 
 ### Added
 - Added the ability to style buttons in the cancel modal separately from the general step button styles via the server.
@@ -1132,7 +1101,7 @@ This is a technical release of v2.12.0.
 ### Fixed
 - Workaround a bug with Android's dynamic feature plugin. Moved all declarations of content providers to the `dynamic-feature` module.
 
-## [v2.10.3] - 2023-09-27 ![SDK 21+](https://img.shields.io/badge/-SDK%2021%2B-blue)
+## [v2.10.3] - 2023-09-27
 
 ### Added
 - Added the `dynamic-feature` module. This module makes it easier to use persona with Android's dynamic feature plugin.
@@ -1141,24 +1110,24 @@ This is a technical release of v2.12.0.
 - Changed video capture to work on devices with no physical microphone.
 - Downgrade Lottie to 4.2.2 due to some customers having compatibility issues with the latest version of Lottie.
 
-## [v2.10.2] - 2023-09-22 ![SDK 21+](https://img.shields.io/badge/-SDK%2021%2B-blue)
+## [v2.10.2] - 2023-09-22
 
 ### Added
 - Added ability to override device locale via `.locale(String)` method on `InquiryTemplateBuilder` or `InquiryBuilder`.
 
-## [v2.10.1] - 2023-09-21 ![SDK 21+](https://img.shields.io/badge/-SDK%2021%2B-blue)
+## [v2.10.1] - 2023-09-21
 
 ### Fixed
 - Fixed a bug where the error message for required input was not cleared after the input was entered.
 - Fixed a crash that can occurs if the user presses backspace on the address auto-complete field.
 
-## [v2.10.0] - 2023-09-19 ![SDK 21+](https://img.shields.io/badge/-SDK%2021%2B-blue)
+## [v2.10.0] - 2023-09-19
 
 ### Changed
 - Changed the address input to appear as a single text field initially that can be expanded by the user.
 - Improved support for Government Id NFC.
 
-## [v2.9.2] - 2023-08-31 ![SDK 21+](https://img.shields.io/badge/-SDK%2021%2B-blue)
+## [v2.9.2] - 2023-08-31
 
 ### Added
 - Added an error code to error results.
@@ -1167,7 +1136,7 @@ This is a technical release of v2.12.0.
 - Updated ESignature component styling.
 - Support the no overlay option for Government ID scan step.
 
-## [v2.9.1] - 2023-08-08 ![SDK 21+](https://img.shields.io/badge/-SDK%2021%2B-blue)
+## [v2.9.1] - 2023-08-08
 
 ### Added
 - Added the ability to color custom SVGs via the server. Note that if loading the local custom asset, 
@@ -1182,7 +1151,7 @@ This is a technical release of v2.12.0.
 ### Fixed
 - Fixed a crash that occurs when an app is built with R8 full mode.
 
-## [v2.9.0] - 2023-07-27 ![SDK 21+](https://img.shields.io/badge/-SDK%2021%2B-blue)
+## [v2.9.0] - 2023-07-27
 
 ### Added
 - Added the ability to hide local image components based on json logic from the server.
@@ -1190,7 +1159,7 @@ This is a technical release of v2.12.0.
 ### Changed
 - Update AGP to 8.0.2 
 
-## [v2.8.0] - 2023-07-20 ![SDK 21+](https://img.shields.io/badge/-SDK%2021%2B-blue)
+## [v2.8.0] - 2023-07-20
 
 ### Added
 - Added `.environmentId` on `InquiryTemplateBuilder` to create inquiries with a specific environment token.
@@ -1204,17 +1173,17 @@ This is a technical release of v2.12.0.
 ### Fixed
 - Fixed a bug where the values of hidden fields were being submitted to the inquiry.
 
-## [v2.7.2] - 2023-07-05 ![SDK 21+](https://img.shields.io/badge/-SDK%2021%2B-blue)
+## [v2.7.2] - 2023-07-05
 
 ### Fixed
 - Fixed `InquiryActivity` retention leak introduced in `v2.6.0`
 
-## [v2.7.1] - 2023-06-27 ![SDK 21+](https://img.shields.io/badge/-SDK%2021%2B-blue)
+## [v2.7.1] - 2023-06-27
 
 ### Fixed
 - Fixed a crash when a PDF417 barcode is scanned but the barcode does not indicate an expiration date.
 
-## [v2.7.0] - 2023-06-22 ![SDK 21+](https://img.shields.io/badge/-SDK%2021%2B-blue)
+## [v2.7.0] - 2023-06-22
 
 ### Added
 - Added `.routingCountry` to `InquiryTemplateBuilder` and `InquiryBuilder` to choose which server region the inquiry is routed to directly.
@@ -1222,12 +1191,12 @@ This is a technical release of v2.12.0.
 ### Fixed
 - Fixed a bug when passing empty string as `sessionToken` to `InquiryBuilder`.
 
-## [v2.6.2] - 2023-05-23 ![SDK 21+](https://img.shields.io/badge/-SDK%2021%2B-blue)
+## [v2.6.2] - 2023-05-23
 
 ### Added
 - Added an experimental feature to allow setting the themeSetId when starting an inquiry. This determines what theme set to read from on the server.
 
-## [v2.6.1] - 2023-05-16 ![SDK 21+](https://img.shields.io/badge/-SDK%2021%2B-blue)
+## [v2.6.1] - 2023-05-16
 
 ### Changed
 - Now setting status bar color to match default background color for initial loading screen.
@@ -1239,7 +1208,7 @@ This is a technical release of v2.12.0.
 - Fix a rare crash with video capture.
 - Fix a layout bug with margins on input date select components.
 
-## [v2.6.0] ![SDK 21+](https://img.shields.io/badge/-SDK%2021%2B-blue)
+## [v2.6.0]
 
 ### Changed
 **UI UPDATES: GOVERNMENT ID CAMERA CAPTURE SCREEN**
@@ -1258,7 +1227,7 @@ If you have any questions about these changes, please reach out to your CSM.
 - Fixed a rare native library crash where the native library could not be found due to an 
   incompatible architecture.
 
-## [v2.5.1] - 2023-04-06 ![SDK 21+](https://img.shields.io/badge/-SDK%2021%2B-blue)
+## [v2.5.1] - 2023-04-06
 
 ### Changed
 - Update dependencies.
@@ -1267,7 +1236,7 @@ If you have any questions about these changes, please reach out to your CSM.
 - Fixed a bug that would cause government id steps to trigger auto capture immediately if auto 
   capture is disabled.
 
-## [v2.5.0] - 2023-04-03 ![SDK 21+](https://img.shields.io/badge/-SDK%2021%2B-blue)
+## [v2.5.0] - 2023-04-03
 
 ### Added
 - Added the ability to load static templates from bundled json files. This can be accessed with the
@@ -1282,13 +1251,13 @@ If you have any questions about these changes, please reach out to your CSM.
 ### Fixed
 - Fixed a crash that could occur when we failed to open a network connection for remote animation assets.
 
-## [v2.4.1] - 2023-03-29 ![SDK 21+](https://img.shields.io/badge/-SDK%2021%2B-blue)
+## [v2.4.1] - 2023-03-29
 
 ### Fixed
 - Return InquiryResponse.Cancel instead of InquiryResponse.Error if the SDK was killed due to an
   activity starting in a new task. Eg. an activity started with the `singleTask` flag.
 
-## [v2.4.0] - 2023-02-22 ![SDK 21+](https://img.shields.io/badge/-SDK%2021%2B-blue)
+## [v2.4.0] - 2023-02-22
 
 ### Changed
 - Deprecated the `theme(@StyleRes theme: Int)` function. `theme(themeSource: ThemeSource)` should
@@ -1296,7 +1265,7 @@ If you have any questions about these changes, please reach out to your CSM.
   in `ClientThemeSource(theme: Int)` with your current client theme id to keep the current behavior
   that only uses client side theming. Note that `ClientThemeSource` is also marked as deprecated.
 
-## [v2.3.6] - 2023-02-13 ![SDK 21+](https://img.shields.io/badge/-SDK%2021%2B-blue)
+## [v2.3.6] - 2023-02-13
 
 ### Added
 - Added welsh translations.
@@ -1308,13 +1277,13 @@ If you have any questions about these changes, please reach out to your CSM.
 ### Fixed
 - Fixed an issue where images could sometimes be cut-off if the value sent from the server was too large.
 
-## [v2.3.5] - 2023-01-25 ![SDK 21+](https://img.shields.io/badge/-SDK%2021%2B-blue)
+## [v2.3.5] - 2023-01-25
 
 ### Fixed
 - Fixed a performance issue with input select bottom sheets that contained a large number of options.
 - Expose classes of objects returned by collection mode in the SDK.
 
-## [v2.3.4] - 2023-01-23 ![SDK 21+](https://img.shields.io/badge/-SDK%2021%2B-blue)
+## [v2.3.4] - 2023-01-23
 
 ### Fixed
 - Fixed input radio button component titles and prefill behavior.
@@ -1329,12 +1298,12 @@ If you have any questions about these changes, please reach out to your CSM.
 ### Changed
 - Removed drop shadows from document card previews.
 
-## [v2.3.3] - 2023-01-17 ![SDK 21+](https://img.shields.io/badge/-SDK%2021%2B-blue)
+## [v2.3.3] - 2023-01-17
 
 ### Fixed
 - Fixed problems with government id hint capture text alignment and border radii
 
-## [v2.3.2] - 2023-01-12 ![SDK 21+](https://img.shields.io/badge/-SDK%2021%2B-blue)
+## [v2.3.2] - 2023-01-12
 
 ### Fixed
 - Fixed an issue where centering vertically on pages wasn't working.
@@ -1342,7 +1311,7 @@ If you have any questions about these changes, please reach out to your CSM.
 - Apply the correct font family from the server to disclaimer texts on capture steps.
 - Fixed broken text alignment when supportsRtl is not set to true in the hosting app manifest.
 
-## [v2.3.1] - 2023-01-10 ![SDK 21+](https://img.shields.io/badge/-SDK%2021%2B-blue)
+## [v2.3.1] - 2023-01-10
 
 ### Added
 - Support for various customizations and polish items on document upload steps.
@@ -1351,18 +1320,18 @@ If you have any questions about these changes, please reach out to your CSM.
 - Improve handling of certain network errors.
 - Document file uploads will now use progress bars instead of loading spinners.
 
-## [v2.3.0] - 2022-12-15 ![SDK 21+](https://img.shields.io/badge/-SDK%2021%2B-blue)
+## [v2.3.0] - 2022-12-15
 
 ### Changed
 - Make nfc-impl module an extension module that is not include dy default.
 - Upgraded minimum SDK to 33.
 
-## [v2.2.46] - 2022-12-01 ![SDK 21+](https://img.shields.io/badge/-SDK%2021%2B-blue)
+## [v2.2.46] - 2022-12-01
 
 ### Changed
 - Downgraded minimum SDK from 33.
 
-## [v2.2.45] - 2022-11-30 ![SDK 21+](https://img.shields.io/badge/-SDK%2021%2B-blue)
+## [v2.2.45] - 2022-11-30
 
 ### Added
 - Added some validations for SDK arguments.
@@ -1371,7 +1340,7 @@ If you have any questions about these changes, please reach out to your CSM.
 - Fixed a crash when using split screen mode during the government id flow and the screen is resized.
 - Fixed a crash when split screen is enabled and the permission modal is shown.
 
-## [v2.2.44] - 2022-11-18 ![SDK 21+](https://img.shields.io/badge/-SDK%2021%2B-blue)
+## [v2.2.44] - 2022-11-18
 
 ### Fixed
 - Fixed an issue where the selfie capture progress bar was too thin.
@@ -1379,7 +1348,7 @@ If you have any questions about these changes, please reach out to your CSM.
 ### Added
 - Added support for government id localization overrides.
 
-## [v2.2.43] - 2022-11-16 ![SDK 21+](https://img.shields.io/badge/-SDK%2021%2B-blue)
+## [v2.2.43] - 2022-11-16
 
 ### Added
 - Added the ability to use custom copy for permissions modals via the server.
@@ -1397,7 +1366,7 @@ If you have any questions about these changes, please reach out to your CSM.
 - Fixed a bug where input select components would not render correctly if multiple input select
   components existed on a single screen.
 
-## [v2.2.42] - 2022-11-08 ![SDK 21+](https://img.shields.io/badge/-SDK%2021%2B-blue)
+## [v2.2.42] - 2022-11-08
 
 ### Added
 - Added ability to configure margins on input components via the server.
@@ -1408,7 +1377,7 @@ If you have any questions about these changes, please reach out to your CSM.
 ### Changed
 - Improved accessibility throughout the flows, including talkback, touch target size, and speakable text.
 
-## [v2.2.41] - 2022-10-19 ![SDK 21+](https://img.shields.io/badge/-SDK%2021%2B-blue)
+## [v2.2.41] - 2022-10-19
 
 ### Added
 - Added support for styling image preview borders in document flows.
@@ -1421,17 +1390,17 @@ If you have any questions about these changes, please reach out to your CSM.
 ### Fixed
 - Don't allow buttons to run up against the edge of the screen when using margins from the server.
 
-## [v2.2.40] - 2022-10-04 ![SDK 21+](https://img.shields.io/badge/-SDK%2021%2B-blue)
+## [v2.2.40] - 2022-10-04
 
 ### Changed
 - Make sure that there is always a minimum built in margin on the selfie start screen page.
 
-## [v2.2.39] - 2022-09-29 ![SDK 21+](https://img.shields.io/badge/-SDK%2021%2B-blue)
+## [v2.2.39] - 2022-09-29
 
 ### Fixed
 - Removed shadow on primary material buttons when using server side theming.
 
-## [v2.2.38] - 2022-09-29 ![SDK 21+](https://img.shields.io/badge/-SDK%2021%2B-blue)
+## [v2.2.38] - 2022-09-29
 
 ### Added
 - Added support for checkbox components in UI steps.
@@ -1451,7 +1420,7 @@ If you have any questions about these changes, please reach out to your CSM.
 - Fixed placeholders for address components when country code is not `US`.
 - Fixed some layout issues when errors were shown on input fields.
 
-## [v2.2.37] - 2022-09-13 ![SDK 21+](https://img.shields.io/badge/-SDK%2021%2B-blue)
+## [v2.2.37] - 2022-09-13
 
 ### Added
 - Added the ability to style footer components as a bottom presented sheet.
@@ -1463,7 +1432,7 @@ If you have any questions about these changes, please reach out to your CSM.
 - Fixed an issue where date input does not display error.
 - Fixed a crash when using custom styled buttons on API 21.
 
-## [v2.2.36] - 2022-09-06 ![SDK 21+](https://img.shields.io/badge/-SDK%2021%2B-blue)
+## [v2.2.36] - 2022-09-06
 
 ### Fixed
 
@@ -1471,26 +1440,26 @@ If you have any questions about these changes, please reach out to your CSM.
 - Fixed validation on address input.
 - Fixed location of disclaimer on government id camera screens.
 
-## [v2.2.35] - 2022-09-01 ![SDK 21+](https://img.shields.io/badge/-SDK%2021%2B-blue)
+## [v2.2.35] - 2022-09-01
 
 ### Fixed
 
 - Fixed an issue where submit buttons in footer components could get into a state where they appear to spin forever.
 - Fixed an issue where nested vertical stacks within UI steps would not render properly.
 
-## [v2.2.34] - 2022-08-30 ![SDK 21+](https://img.shields.io/badge/-SDK%2021%2B-blue)
+## [v2.2.34] - 2022-08-30
 
 ### Fixed
 
 - Fixed a crash when custom text attributes are set on the overlay hint of the government ID capture screen.
 
-## [v2.2.33] - 2022-08-30 ![SDK 21+](https://img.shields.io/badge/-SDK%2021%2B-blue)
+## [v2.2.33] - 2022-08-30
 
 ### Fixed
 
 - Fixed a bug where background images and colors wouldn't stretch to fill the screen.
 
-## [v2.2.32] - 2022-08-29 ![SDK 21+](https://img.shields.io/badge/-SDK%2021%2B-blue)
+## [v2.2.32] - 2022-08-29
 
 ### Changed
 
@@ -1504,7 +1473,7 @@ If you have any questions about these changes, please reach out to your CSM.
 - Fixed text layouts when the device is set to render large font sizes for accessibility.
 - Fixed a bug that caused inquiries which contained back-to-back combined steps of the same type to hang.
 
-## [v2.2.31] - 2022-08-22 ![SDK 21+](https://img.shields.io/badge/-SDK%2021%2B-blue)
+## [v2.2.31] - 2022-08-22
 
 ### Added
 
@@ -1519,7 +1488,7 @@ If you have any questions about these changes, please reach out to your CSM.
 ### Changed
 - Downgrade dependency on bouncy castle from jdk18on to jdk15to18.
 
-## [v2.2.30] - 2022-08-15 ![SDK 21+](https://img.shields.io/badge/-SDK%2021%2B-blue)
+## [v2.2.30] - 2022-08-15
 
 ### Fixed
 
@@ -1532,7 +1501,7 @@ If you have any questions about these changes, please reach out to your CSM.
 - Default assets for government id, selfie, and document processing animations have been updated.
 - Permission request popup has been moved for the government ID step. It was moved from the ID select screen to the camera capture screen.
 
-## [v2.2.29] - 2022-07-29 ![SDK 21+](https://img.shields.io/badge/-SDK%2021%2B-blue)
+## [v2.2.29] - 2022-07-29
 
 ### Added
 
@@ -1545,13 +1514,13 @@ If you have any questions about these changes, please reach out to your CSM.
 - Swapped the order of the buttons on the permission request bottom sheet to be consistent with Android standards.
 - Fixed an issue where you couldn't resume inquiries created in sandbox mode and have the pass/fail toggle show up.
 
-## [v2.2.28] - 2022-07-19 ![SDK 21+](https://img.shields.io/badge/-SDK%2021%2B-blue)
+## [v2.2.28] - 2022-07-19
 
 ### Fixed
 
 - Fixed a bug where buttons were not being properly aligned when a loading indicator is built into the button.
 
-## [v2.2.27] - 2022-07-18 ![SDK 21+](https://img.shields.io/badge/-SDK%2021%2B-blue)
+## [v2.2.27] - 2022-07-18
 
 ### Added
 
@@ -1561,7 +1530,7 @@ If you have any questions about these changes, please reach out to your CSM.
 
 - Fixed a bug where the government ID step will send the wrong parameters to the server in certain edge cases.
 
-## [v2.2.26] - 2022-07-08 ![SDK 21+](https://img.shields.io/badge/-SDK%2021%2B-blue)
+## [v2.2.26] - 2022-07-08
 
 ### Added
 
@@ -1575,7 +1544,7 @@ If you have any questions about these changes, please reach out to your CSM.
 - Removed loading screens when navigating back
 - Update dependencies
 
-## [v2.2.25] - 2022-06-27 ![SDK 21+](https://img.shields.io/badge/-SDK%2021%2B-blue)
+## [v2.2.25] - 2022-06-27
 
 ### Changed
 
@@ -1587,7 +1556,7 @@ If you have any questions about these changes, please reach out to your CSM.
 - Fix a bug that caused the government ID step to upload one more photo than necessary.
 - Made lottie animation loading more resilient.
 
-## [v2.2.24] - 2022-06-15 ![SDK 21+](https://img.shields.io/badge/-SDK%2021%2B-blue)
+## [v2.2.24] - 2022-06-15
 
 ### Fixed
 
@@ -1608,7 +1577,7 @@ If you have any questions about these changes, please reach out to your CSM.
 - Limit polling for inquiry status update to 90 seconds. Previously there was no time limit.
 - Update the network write timeout to 1 minute. Previously this was 10 seconds.
 
-## [v2.2.23] - 2022-05-24 ![SDK 21+](https://img.shields.io/badge/-SDK%2021%2B-blue)
+## [v2.2.23] - 2022-05-24
 
 ### Added
 
@@ -1620,14 +1589,14 @@ If you have any questions about these changes, please reach out to your CSM.
 - Update dependencies
 - Depend on Kotlin 1.6.10
 
-## [v2.2.22] - 2022-05-20 ![SDK 21+](https://img.shields.io/badge/-SDK%2021%2B-blue)
+## [v2.2.22] - 2022-05-20
 
 ### Fixed
 
 - Disable back action for government id flows without a back step
 - Improve handling of network errors
 
-## [v2.2.21] - 2022-05-16 ![SDK 21+](https://img.shields.io/badge/-SDK%2021%2B-blue)
+## [v2.2.21] - 2022-05-16
 
 ### Changed
 
@@ -1635,7 +1604,7 @@ If you have any questions about these changes, please reach out to your CSM.
 - Make the manual capture button delay for the government id step configurable by the server
 - Update the image shown when there was an error verifying the back side of a government id
 
-## [v2.2.20] - 2022-05-06 ![SDK 21+](https://img.shields.io/badge/-SDK%2021%2B-blue)
+## [v2.2.20] - 2022-05-06
 
 ### Changed
 
@@ -1649,19 +1618,19 @@ If you have any questions about these changes, please reach out to your CSM.
 - Display errors on input fields when there is a user input error
 - Fix flickering of image/document previews in rare cases.
 
-## [v2.2.19] - 2022-04-29 ![SDK 21+](https://img.shields.io/badge/-SDK%2021%2B-blue)
+## [v2.2.19] - 2022-04-29
 
 ### Fixed
 
 - Fix the resolution of font names when loading custom font families in texts
 
-## [v2.2.18] - 2022-04-27 ![SDK 21+](https://img.shields.io/badge/-SDK%2021%2B-blue)
+## [v2.2.18] - 2022-04-27
 
 ### Changed
 
 - Handle more types of network errors
 
-## [v2.2.17] - 2022-04-22 ![SDK 21+](https://img.shields.io/badge/-SDK%2021%2B-blue)
+## [v2.2.17] - 2022-04-22
 
 ### Changed
 
@@ -1671,19 +1640,19 @@ If you have any questions about these changes, please reach out to your CSM.
 
 - Fix a race condition crash on the inquiry success screen
 
-## [v2.2.16] - 2022-04-20 ![SDK 21+](https://img.shields.io/badge/-SDK%2021%2B-blue)
+## [v2.2.16] - 2022-04-20
 
 ### Added
 - Added the ability to render markdown on selfie step disclosure text
 
-## [v2.2.15] - 2022-04-13 ![SDK 21+](https://img.shields.io/badge/-SDK%2021%2B-blue)
+## [v2.2.15] - 2022-04-13
 
 ### Removed
 
 - The following string resources have been removed, their values are now supplied by the server:
   - `pi2_selfie_hold_still`
 
-## [v2.2.14] - 2022-04-04 ![SDK 21+](https://img.shields.io/badge/-SDK%2021%2B-blue)
+## [v2.2.14] - 2022-04-04
 
 ### Added
 
@@ -1693,7 +1662,7 @@ If you have any questions about these changes, please reach out to your CSM.
 
 - Handle 404s more gracefully
 
-## [v2.2.13] - 2022-03-30 ![SDK 21+](https://img.shields.io/badge/-SDK%2021%2B-blue)
+## [v2.2.13] - 2022-03-30
 
 ### Changed
 
@@ -1704,7 +1673,7 @@ If you have any questions about these changes, please reach out to your CSM.
 
 - Allow for server-defined images to have nullable widths/heights without crashing
 
-## [v2.2.12] - 2022-03-24 ![SDK 21+](https://img.shields.io/badge/-SDK%2021%2B-blue)
+## [v2.2.12] - 2022-03-24
 
 ### Changed
 
@@ -1716,7 +1685,7 @@ If you have any questions about these changes, please reach out to your CSM.
 - Show users the manual capture button immediately if auto capture cannot be performed on the device
 - Recover from camera related errors more gracefully, allow users to retake photos on error
 
-## [v2.2.11] - 2022-03-22 ![SDK 21+](https://img.shields.io/badge/-SDK%2021%2B-blue)
+## [v2.2.11] - 2022-03-22
 
 ### Changed
 
@@ -1732,7 +1701,7 @@ If you have any questions about these changes, please reach out to your CSM.
 - Respect the values of `personaSelfieLookLeftDrawable` and `personaSelfieLookRightDrawable`
 - Prevent buttons from overlapping with UI elements on government ID flow
 
-## [v2.2.10] - 2022-03-16 ![SDK 21+](https://img.shields.io/badge/-SDK%2021%2B-blue)
+## [v2.2.10] - 2022-03-16
 
 ### Changed
 
@@ -1758,7 +1727,7 @@ If you have any questions about these changes, please reach out to your CSM.
 - Improve government ID capture's user experience on lower end devices; make UI more responsive
 - Improve the capture speed of government ID auto capture and manual capture
 
-## [v2.2.9] - 2022-03-07 ![SDK 21+](https://img.shields.io/badge/-SDK%2021%2B-blue)
+## [v2.2.9] - 2022-03-07
 
 ### Added
 
@@ -1776,14 +1745,14 @@ If you have any questions about these changes, please reach out to your CSM.
 - Fix layout on government id select screen when no back button is shown
 - Fix back button on government id review screen
 
-## [v2.2.8] - 2022-02-24 ![SDK 21+](https://img.shields.io/badge/-SDK%2021%2B-blue)
+## [v2.2.8] - 2022-02-24
 
 ### Added
 
 - Added support for custom government id scanning lottie animation
 - Added support for custom selfie look left and look right drawable
 
-## [v2.2.7] - 2022-02-22 ![SDK 21+](https://img.shields.io/badge/-SDK%2021%2B-blue)
+## [v2.2.7] - 2022-02-22
 
 ### Added
 
@@ -1794,7 +1763,7 @@ If you have any questions about these changes, please reach out to your CSM.
 - Allow "center-only" selfie experiences to pass
 - Fixed crash in government id
 
-## [v2.2.6] - 2022-02-16 ![SDK 21+](https://img.shields.io/badge/-SDK%2021%2B-blue)
+## [v2.2.6] - 2022-02-16
 
 ### Added
 
@@ -1805,7 +1774,7 @@ If you have any questions about these changes, please reach out to your CSM.
 - Default alignment of ui step screens
 - Country select now presents a bottom sheet instead of a dropdown
 
-## [v2.2.5] - 2022-02-11 ![SDK 21+](https://img.shields.io/badge/-SDK%2021%2B-blue)
+## [v2.2.5] - 2022-02-11
 
 ### Added
 
@@ -1824,7 +1793,7 @@ If you have any questions about these changes, please reach out to your CSM.
 - Autofocus first input field on page load
 - Only allow digits (0-9) in day/month input fields
 
-## [v2.2.4] - 2022-02-04 ![SDK 21+](https://img.shields.io/badge/-SDK%2021%2B-blue)
+## [v2.2.4] - 2022-02-04
 
 ### Added
 
@@ -1860,13 +1829,13 @@ If you have any questions about these changes, please reach out to your CSM.
   - `governmentid_idlabel_visa`
   - `governmentid_idlabel_wp`
 
-## [v2.2.3] - 2022-02-03 ![SDK 21+](https://img.shields.io/badge/-SDK%2021%2B-blue)
+## [v2.2.3] - 2022-02-03
 
 ### Fixed
 
 - Use styles that are night-mode friendly for chevrons and arrows
 
-## [v2.2.2] - 2022-02-01 ![SDK 21+](https://img.shields.io/badge/-SDK%2021%2B-blue)
+## [v2.2.2] - 2022-02-01
 
 ### Added
 
@@ -1877,7 +1846,7 @@ If you have any questions about these changes, please reach out to your CSM.
 - Enable haptic feedback on older versions of Android
 - Address resource contention that stopped the camera after many usages
 
-## [v2.2.1] - 2022-01-28 ![SDK 21+](https://img.shields.io/badge/-SDK%2021%2B-blue)
+## [v2.2.1] - 2022-01-28
 
 ### Added
 
@@ -1889,13 +1858,13 @@ If you have any questions about these changes, please reach out to your CSM.
 - Depend on Kotlin 1.5.31
 - Update resources to prevent name collisions with the v1.x SDK
 
-## [v2.2.0] - 2022-01-25 ![SDK 21+](https://img.shields.io/badge/-SDK%2021%2B-blue)
+## [v2.2.0] - 2022-01-25
 
 ### Breaking
 
 - `com.withpersona.sdk` has been changed to `com.withpersona.sdk2` everywhere
 
-## [v2.1.3] - 2022-01-24 ![SDK 21+](https://img.shields.io/badge/-SDK%2021%2B-blue)
+## [v2.1.3] - 2022-01-24
 
 ### Added
 
@@ -1912,7 +1881,7 @@ If you have any questions about these changes, please reach out to your CSM.
   - `persona_selfie_start_body`
   - `persona_selfie_start_button`
 
-## [v2.1.2] - 2022-01-18 ![SDK 21+](https://img.shields.io/badge/-SDK%2021%2B-blue)
+## [v2.1.2] - 2022-01-18
 
 ### Added
 
@@ -1926,7 +1895,7 @@ If you have any questions about these changes, please reach out to your CSM.
 - Update dependencies
 - Various bug fixes
 
-## [v2.1.1] - 2021-12-13 ![SDK 21+](https://img.shields.io/badge/-SDK%2021%2B-blue)
+## [v2.1.1] - 2021-12-13
 
 ### Added
 
@@ -1946,7 +1915,7 @@ If you have any questions about these changes, please reach out to your CSM.
   - `persona_governmentid_submitting_title`
   - `persona_governmentid_submitting_body`
 
-## [v2.1.0] - 2021-11-18 ![SDK 21+](https://img.shields.io/badge/-SDK%2021%2B-blue)
+## [v2.1.0] - 2021-11-18
 
 ### Added
 
@@ -1963,14 +1932,14 @@ If you have any questions about these changes, please reach out to your CSM.
 - Remove Snackbar usage in Sandbox which older versions of AGP strips out
 - Use the Material UI background for `materialButtonStyle` and `materialButtonStyleSecondary`
 
-## [v2.0.3] - 2021-10-20 ![SDK 21+](https://img.shields.io/badge/-SDK%2021%2B-blue)
+## [v2.0.3] - 2021-10-20
 
 ### Fixed
 
 - Return an error when the SDK is launched without internet
 - Return session when canceling from document upload step
 
-## [v2.0.2] - 2021-10-13 ![SDK 21+](https://img.shields.io/badge/-SDK%2021%2B-blue)
+## [v2.0.2] - 2021-10-13
 
 ### Added
 
@@ -1988,7 +1957,7 @@ If you have any questions about these changes, please reach out to your CSM.
 
 - Update dependencies
 
-## [v2.0.1] - 2021-08-26 ![SDK 21+](https://img.shields.io/badge/-SDK%2021%2B-blue)
+## [v2.0.1] - 2021-08-26
 
 ### Added
 
@@ -2003,7 +1972,7 @@ If you have any questions about these changes, please reach out to your CSM.
 
 - Footer now has a thin line on top of it
 
-## [v2.0.0] - 2021-08-05 ![SDK 21+](https://img.shields.io/badge/-SDK%2021%2B-blue)
+## [v2.0.0] - 2021-08-05
 
 ### Added
 
