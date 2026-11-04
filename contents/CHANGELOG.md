@@ -7,6 +7,11 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## Unreleased
 
+## [v2.61.1] - 2026-11-03 ![SDK 23+](https://img.shields.io/badge/-SDK%2023%2B-blue)
+
+### Fixed
+- Fixed a rare crash when chunked video upload is used.
+
 ## [v2.61.0] - 2026-10-21 ![SDK 23+](https://img.shields.io/badge/-SDK%2023%2B-blue)
 
 ### Added
