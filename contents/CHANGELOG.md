@@ -7,6 +7,13 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## Unreleased
 
+## [v2.61.2] - 2026-11-17 ![SDK 23+](https://img.shields.io/badge/-SDK%2023%2B-blue)
+
+### Fixed
+- Fixed a bug where selfie disclosure text is read by talkback even when it's blank.
+- Fixed a rare crash when chunked video upload is used.
+- Fixed a rare bug where the camera preview can appear stretched.
+
 ## [v2.61.1] - 2026-11-03 ![SDK 23+](https://img.shields.io/badge/-SDK%2023%2B-blue)
 
 ### Fixed
