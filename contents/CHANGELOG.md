@@ -7,17 +7,27 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## Unreleased
 
-## [v2.61.2] - 2026-11-17 ![SDK 23+](https://img.shields.io/badge/-SDK%2023%2B-blue)
+## [v2.62.0] - 2026-11-20 ![SDK 23+](https://img.shields.io/badge/-SDK%2023%2B-blue)
+
+### Added
+- Added `com.withpersona.sdk2:inquiry-core` so apps can include only the verification steps they use. Depend on `inquiry-core` plus the step artifacts your inquiries need (`ui`, `government-id`, `selfie`, `document`, and `integration`) instead of `inquiry`, and use the same version for every Persona artifact. Most inquiry templates need `ui`, and steps that open in a browser tab need `integration`. If an inquiry reaches a step whose artifact is not included, it ends with `ErrorCode.IntegrationError` and a debug message naming the artifact to add. `com.withpersona.sdk2:inquiry` still includes every step.
+- Added support for reading multiple operations from a Japanese My Number card in a single NFC scan.
+- Japanese My Number NFC scans can now show a different error message, icon, and buttons for each kind of scan error, as configured for the inquiry.
+
+### Changed
+- When an inquiry collects device location, the SDK now sends additional details about the location reading.
+- The SDK can now send the device's time zone, language, keyboard language, and regional format settings to Persona along with the other device information it already collects.
+- Address inputs now always show their fields in the order and with the placeholders used by the selected country, including additional fields such as neighborhood. The address entry in `StepData.UiStepData.componentParams` now always includes a `country_code` and these additional fields, and leaves out values for fields the selected country's address format does not use.
 
 ### Fixed
 - Fixed a bug where selfie disclosure text is read by talkback even when it's blank.
-- Fixed a rare crash when chunked video upload is used.
 - Fixed a rare bug where the camera preview can appear stretched.
-
-## [v2.61.1] - 2026-11-03 ![SDK 23+](https://img.shields.io/badge/-SDK%2023%2B-blue)
-
-### Fixed
 - Fixed a rare crash when chunked video upload is used.
+- Fixed a crash that could occur when the app was backgrounded or the camera closed while video was streaming during a Selfie or Government ID step.
+- Fixed a bug where the title of the NFC scan troubleshooting tips sheet was always shown in English instead of the inquiry's language.
+- Fixed a bug where a red box is drawn around a text view when it is tapped.
+- Fixed a rare crash that can occur if video recording is enabled and the recording times outs at the same time as submit is tapped.
+- Fixed a rare bug on the government ID step where the capture button can get stuck if the camera is restarted while capturing an image.
 
 ## [v2.61.0] - 2026-10-21 ![SDK 23+](https://img.shields.io/badge/-SDK%2023%2B-blue)
 
@@ -26,14 +36,23 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 - Added support for custom spacing between options in radio group and checkbox group components.
 - Added support for signing operations on Japanese My Number cards during NFC scans.
 - Added support for reading the My Number from Japanese My Number cards during NFC scans.
+- Added support for choosing the order of the month, day, and year inputs in the Date component.
+- Address inputs can now show their fields in the order used by the selected country, include additional address fields such as neighborhood, and update when the country is changed on the same screen. When this applies, the address entry in `StepData.UiStepData.componentParams` also includes these additional fields and a `country_code`.
+- Added a camera watchdog that identifies problems with the camera feed and automatically tries to correct the problem by trying different camera configurations.
+
+### Removed
+- **Breaking change** Removed the optional `com.withpersona.sdk2:text-extraction-impl` artifact. If your app depends on it, remove the dependency. Inquiries behave the same as they did without it. If you turned off Sentry's tracing instrumentation only for this artifact, you can turn it back on.
 
 ### Changed
 - Steps that run in Persona's hosted web flow now open inside the inquiry instead of in a browser tab.
+- Improved the performance of image capture on selfie and government ID steps in some cases.
+- Deprecated `Inquiry.prefetchModels()`. It now does nothing, and you can remove calls to it.
 
 ### Fixed
 - Fixed a bug where PDF files uploaded in the Government ID step were sent without their contents.
 - Fixed selfie capture timestamps being sent in local time instead of UTC on devices outside the UTC time zone.
 - Fixed a bug in the Government ID step with auto-classification where the step could restart from the ID type selection screen.
+- Fixed a UI bug where the camera feed can draw outside of its boundaries on the government ID camera screen.
 
 ## [v2.60.0] - 2026-10-13 ![SDK 23+](https://img.shields.io/badge/-SDK%2023%2B-blue)
 
